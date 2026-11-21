@@ -1,0 +1,1106 @@
+[
+ {
+  "spec": "S1",
+  "mode": "A",
+  "passed": false,
+  "iterations": 1,
+  "trace": [
+   {
+    "iter": 1,
+    "reply": "{\n  \"reasoning\": \"Chosen Itail=30\u00b5A to meet 200\u00b5W power limit. Id per input transistor =15\u00b5A. Selected Vov\u22480.2V for NMOS (gm\u2248150\u00b5S) giving GBW\u224812MHz >10MHz. Used longer L for M1/M2 (0.5\u00b5m) to improve gain (ro\u22486M\u03a9) achieving >40dB. PMOS load sized with L=0.28\u00b5m for high gm3 to push mirror pole well above GBW, ensuring \u226560\u00b0 phase margin. Output swing satisfied with Vov\u22480.2\u20110.3V. All dimensions within allowed range.\",\n  \"W1_um\": 1.875,\n  \"L1_um\": 0.5,\n  \"W3_um\": 1.05,\n  \"L3_um\": 0.28,\n  \"W5_um\": 3.75,\n  \"L5_um\": 0.5,\n  \"Itail_uA\": 30\n}",
+    "proposal": {
+     "reasoning": "Chosen Itail=30\u00b5A to meet 200\u00b5W power limit. Id per input transistor =15\u00b5A. Selected Vov\u22480.2V for NMOS (gm\u2248150\u00b5S) giving GBW\u224812MHz >10MHz. Used longer L for M1/M2 (0.5\u00b5m) to improve gain (ro\u22486M\u03a9) achieving >40dB. PMOS load sized with L=0.28\u00b5m for high gm3 to push mirror pole well above GBW, ensuring \u226560\u00b0 phase margin. Output swing satisfied with Vov\u22480.2\u20110.3V. All dimensions within allowed range.",
+     "W1_um": 1.875,
+     "L1_um": 0.5,
+     "W3_um": 1.05,
+     "L3_um": 0.28,
+     "W5_um": 3.75,
+     "L5_um": 0.5,
+     "Itail_uA": 30
+    },
+    "sizing": {
+     "W1": 1.8749999999999998e-06,
+     "L1": 5e-07,
+     "W3": 1.05e-06,
+     "L3": 2.8e-07,
+     "W5": 3.7499999999999997e-06,
+     "L5": 5e-07,
+     "Itail": 2.9999999999999997e-05
+    },
+    "metrics": {
+     "ok": true,
+     "corner": "typical",
+     "A0_dB": 32.869744,
+     "GBW_Hz": 8784587.019306239,
+     "PM_deg": 91.11252907797439,
+     "power_W": 0.00019547154,
+     "Vout_dc": 1.661386,
+     "Vtail": 0.5684548,
+     "SR_Vus": 14.999999999999998,
+     "sat_margin_V": {
+      "M1": 1.3627154,
+      "M2": 0.8570065000000001,
+      "M3": 0.7228375,
+      "M4": 1.2156595000000001,
+      "M5": 0.34628010000000004
+     },
+     "all_saturated": true,
+     "swing_V": 2.0726662
+    },
+    "violations": [
+     "GBW 8.78 MHz < 10 MHz",
+     "A0 32.9 dB < 40 dB"
+    ]
+   }
+  ],
+  "corners_pass": null,
+  "power_frac": null
+ },
+ {
+  "spec": "S2",
+  "mode": "A",
+  "passed": false,
+  "iterations": 1,
+  "trace": [
+   {
+    "iter": 1,
+    "reply": "{\n  \"reasoning\": \"Chosen gm\u2248250\u00b5S to meet 20\u202fMHz GBW with CL=2\u202fpF. Tail current Itail\u224850\u202f\u00b5A gives Id per input \u224825\u202f\u00b5A, power 3.3\u202fV\u00b7100\u202f\u00b5A\u2248330\u202f\u00b5W <400\u202f\u00b5W. To obtain \u226540\u202fdB gain, set L=1\u202f\u00b5m for M1\u2011M4, reducing channel\u2011length\u2011modulation and giving gds\u22480.7\u20111.4\u202f\u00b5S, yielding gain \u2248120 (>100). Vov\u22480.2\u202fV for input pair and load gives sufficient swing (\u22482.6\u202fV). Tail device uses Vov\u22480.3\u202fV for robustness. All dimensions are rounded to practical values.\",\n  \"W1_um\": 6.3,\n  \"L1_um\": 1.0,\n  \"W3_um\": 12.5,\n  \"L3_um\": 1.0,\n  \"W5_um\": 2.8,\n  \"L5_um\": 0.5,\n  \"Itail_uA\": 50.0\n}",
+    "proposal": {
+     "reasoning": "Chosen gm\u2248250\u00b5S to meet 20\u202fMHz GBW with CL=2\u202fpF. Tail current Itail\u224850\u202f\u00b5A gives Id per input \u224825\u202f\u00b5A, power 3.3\u202fV\u00b7100\u202f\u00b5A\u2248330\u202f\u00b5W <400\u202f\u00b5W. To obtain \u226540\u202fdB gain, set L=1\u202f\u00b5m for M1\u2011M4, reducing channel\u2011length\u2011modulation and giving gds\u22480.7\u20111.4\u202f\u00b5S, yielding gain \u2248120 (>100). Vov\u22480.2\u202fV for input pair and load gives sufficient swing (\u22482.6\u202fV). Tail device uses Vov\u22480.3\u202fV for robustness. All dimensions are rounded to practical values.",
+     "W1_um": 6.3,
+     "L1_um": 1.0,
+     "W3_um": 12.5,
+     "L3_um": 1.0,
+     "W5_um": 2.8,
+     "L5_um": 0.5,
+     "Itail_uA": 50.0
+    },
+    "sizing": {
+     "W1": 6.3e-06,
+     "L1": 1e-06,
+     "W3": 1.2499999999999999e-05,
+     "L3": 1e-06,
+     "W5": 2.8e-06,
+     "L5": 5e-07,
+     "Itail": 4.9999999999999996e-05
+    },
+    "metrics": {
+     "ok": true,
+     "corner": "typical",
+     "A0_dB": 46.549347,
+     "GBW_Hz": 15092108.639600806,
+     "PM_deg": 87.8446513158437,
+     "power_W": 0.00032456061,
+     "Vout_dc": 1.652512,
+     "Vtail": 0.5663494,
+     "SR_Vus": 25.0,
+     "sat_margin_V": {
+      "M1": 1.3875506999999998,
+      "M2": 0.8596767,
+      "M3": 0.838212,
+      "M4": 1.3640887,
+      "M5": 0.24618790000000002
+     },
+     "all_saturated": true,
+     "swing_V": 2.2237649999999998
+    },
+    "violations": [
+     "GBW 15.09 MHz < 20 MHz"
+    ]
+   }
+  ],
+  "corners_pass": null,
+  "power_frac": null
+ },
+ {
+  "spec": "S3",
+  "mode": "A",
+  "passed": true,
+  "iterations": 1,
+  "trace": [
+   {
+    "iter": 1,
+    "reply": "{\n  \"reasoning\": \"Chosen Itail=120\u00b5A to meet power (<1mW) and GBW (gm1\u2248600\u00b5S \u2192 GBW\u224895MHz). Vov_n=0.2V, Vov_p=0.15V give required gm and output swing. L=0.5\u00b5m for all devices balances gain and speed. Calculated W using Id=\u00bd\u00b7\u03bcCox\u00b7(W/L)\u00b7Vov^2 with \u03bcnCox\u2248200\u00b5A/V^2, \u03bcpCox\u2248100\u00b5A/V^2.\",\n  \"W1_um\": 7.5,\n  \"L1_um\": 0.5,\n  \"W3_um\": 26.7,\n  \"L3_um\": 0.5,\n  \"W5_um\": 15.0,\n  \"L5_um\": 0.5,\n  \"Itail_uA\": 120.0\n}",
+    "proposal": {
+     "reasoning": "Chosen Itail=120\u00b5A to meet power (<1mW) and GBW (gm1\u2248600\u00b5S \u2192 GBW\u224895MHz). Vov_n=0.2V, Vov_p=0.15V give required gm and output swing. L=0.5\u00b5m for all devices balances gain and speed. Calculated W using Id=\u00bd\u00b7\u03bcCox\u00b7(W/L)\u00b7Vov^2 with \u03bcnCox\u2248200\u00b5A/V^2, \u03bcpCox\u2248100\u00b5A/V^2.",
+     "W1_um": 7.5,
+     "L1_um": 0.5,
+     "W3_um": 26.7,
+     "L3_um": 0.5,
+     "W5_um": 15.0,
+     "L5_um": 0.5,
+     "Itail_uA": 120.0
+    },
+    "sizing": {
+     "W1": 7.499999999999999e-06,
+     "L1": 5e-07,
+     "W3": 2.67e-05,
+     "L3": 5e-07,
+     "W5": 1.4999999999999999e-05,
+     "L5": 5e-07,
+     "Itail": 0.00011999999999999999
+    },
+    "metrics": {
+     "ok": true,
+     "corner": "typical",
+     "A0_dB": 38.55799,
+     "GBW_Hz": 69393398.7377026,
+     "PM_deg": 86.72530840411832,
+     "power_W": 0.0007823738999999999,
+     "Vout_dc": 1.657495,
+     "Vtail": 0.568688,
+     "SR_Vus": 119.99999999999999,
+     "sat_margin_V": {
+      "M1": 1.5018740000000002,
+      "M2": 0.8625247,
+      "M3": 0.7877023000000001,
+      "M4": 1.421659,
+      "M5": 0.34970049999999997
+     },
+     "all_saturated": true,
+     "swing_V": 2.2841837
+    },
+    "violations": []
+   }
+  ],
+  "corners_pass": true,
+  "power_frac": 0.7823739
+ },
+ {
+  "spec": "S4",
+  "mode": "A",
+  "passed": false,
+  "iterations": 1,
+  "trace": [
+   {
+    "iter": 1,
+    "reply": "{\n  \"reasoning\": \"Power limit gives Itail \u226415\u202f\u00b5A (2\u00b7Itail\u00b73.3\u202fV \u2264100\u202f\u00b5W). To meet GBW \u22655\u202fMHz with CL=5\u202fpF, gm1 \u22652\u03c0\u00b75e6\u00b75e-12 \u2248157\u202f\u00b5S. Using Id = Itail/2 and gm\u22482\u00b7Id/Vov, choose Vov1\u22480.09\u202fV, giving gm\u2248167\u202f\u00b5S with Itail=15\u202f\u00b5A. This sets (W/L)\u22489.3 for NMOS; with L1=0.5\u202f\u00b5m, W1\u22484.6\u202f\u00b5m. Long channel (L=0.5\u202f\u00b5m) reduces \u03bb, giving gds low enough for A0\u2248gm1/(gds2+gds4) >45\u202fdB. Tail NMOS sized for Itail=15\u202f\u00b5A and Vov5\u22480.2\u202fV gives W5\u22481.9\u202f\u00b5m (L5=0.5\u202f\u00b5m). PMOS load sized for the same current with Vov4\u22480.3\u202fV gives (W/L)\u22483.3; with L3=0.5\u202f\u00b5m, W3\u22481.7\u202f\u00b5m. Output swing \u22483.3\u2011Vov4\u2011Vtail\u2011Vov1 \u22482.7\u202fV >1.5\u202fV. Mirror pole is pushed above GBW by modest node capacitance, ensuring \u226560\u00b0 phase margin.\",\n  \"W1_um\": 4.6,\n  \"L1_um\": 0.5,\n  \"W3_um\": 1.7,\n  \"L3_um\": 0.5,\n  \"W5_um\": 1.9,\n  \"L5_um\": 0.5,\n  \"Itail_uA\": 15\n}",
+    "proposal": {
+     "reasoning": "Power limit gives Itail \u226415\u202f\u00b5A (2\u00b7Itail\u00b73.3\u202fV \u2264100\u202f\u00b5W). To meet GBW \u22655\u202fMHz with CL=5\u202fpF, gm1 \u22652\u03c0\u00b75e6\u00b75e-12 \u2248157\u202f\u00b5S. Using Id = Itail/2 and gm\u22482\u00b7Id/Vov, choose Vov1\u22480.09\u202fV, giving gm\u2248167\u202f\u00b5S with Itail=15\u202f\u00b5A. This sets (W/L)\u22489.3 for NMOS; with L1=0.5\u202f\u00b5m, W1\u22484.6\u202f\u00b5m. Long channel (L=0.5\u202f\u00b5m) reduces \u03bb, giving gds low enough for A0\u2248gm1/(gds2+gds4) >45\u202fdB. Tail NMOS sized for Itail=15\u202f\u00b5A and Vov5\u22480.2\u202fV gives W5\u22481.9\u202f\u00b5m (L5=0.5\u202f\u00b5m). PMOS load sized for the same current with Vov4\u22480.3\u202fV gives (W/L)\u22483.3; with L3=0.5\u202f\u00b5m, W3\u22481.7\u202f\u00b5m. Output swing \u22483.3\u2011Vov4\u2011Vtail\u2011Vov1 \u22482.7\u202fV >1.5\u202fV. Mirror pole is pushed above GBW by modest node capacitance, ensuring \u226560\u00b0 phase margin.",
+     "W1_um": 4.6,
+     "L1_um": 0.5,
+     "W3_um": 1.7,
+     "L3_um": 0.5,
+     "W5_um": 1.9,
+     "L5_um": 0.5,
+     "Itail_uA": 15
+    },
+    "sizing": {
+     "W1": 4.599999999999999e-06,
+     "L1": 5e-07,
+     "W3": 1.6999999999999998e-06,
+     "L3": 5e-07,
+     "W5": 1.8999999999999998e-06,
+     "L5": 5e-07,
+     "Itail": 1.4999999999999999e-05
+    },
+    "metrics": {
+     "ok": true,
+     "corner": "typical",
+     "A0_dB": 41.175788,
+     "GBW_Hz": 3321438.0355904824,
+     "PM_deg": 90.28245649549041,
+     "power_W": 9.816444e-05,
+     "Vout_dc": 1.654621,
+     "Vtail": 0.6849537,
+     "SR_Vus": 3.0,
+     "sat_margin_V": {
+      "M1": 1.3827375,
+      "M2": 0.8489454,
+      "M3": 0.7991323000000001,
+      "M4": 1.3301725,
+      "M5": 0.4587041
+     },
+     "all_saturated": true,
+     "swing_V": 2.1791182
+    },
+    "violations": [
+     "GBW 3.32 MHz < 5 MHz",
+     "A0 41.2 dB < 45 dB"
+    ]
+   }
+  ],
+  "corners_pass": null,
+  "power_frac": null
+ },
+ {
+  "spec": "S5",
+  "mode": "A",
+  "passed": false,
+  "iterations": 1,
+  "trace": [
+   {
+    "iter": 1,
+    "reply": "{\n  \"reasoning\": \"Chosen Itail\u2248113\u00b5A to meet GBW (gm\u2248566\u00b5S) with Vov\u22480.2V, staying under power limit. NMOS pair sized for Id\u224856.5\u00b5A each, W/L\u224814.1 with L=1\u00b5m \u2192 W\u22487\u00b5m. PMOS load sized for same current, W/L\u224828.3 with L=1.8\u00b5m \u2192 W\u224851\u00b5m to get low gds and gain >38dB. Tail NMOS sized for Itail with Vov\u22480.2V, W/L\u224828.3, L=1\u00b5m \u2192 W\u224828\u00b5m. All constraints satisfied.\",\n  \"W1_um\": 7.0,\n  \"L1_um\": 1.0,\n  \"W3_um\": 51.0,\n  \"L3_um\": 1.8,\n  \"W5_um\": 28.0,\n  \"L5_um\": 1.0,\n  \"Itail_uA\": 113.0\n}",
+    "proposal": {
+     "reasoning": "Chosen Itail\u2248113\u00b5A to meet GBW (gm\u2248566\u00b5S) with Vov\u22480.2V, staying under power limit. NMOS pair sized for Id\u224856.5\u00b5A each, W/L\u224814.1 with L=1\u00b5m \u2192 W\u22487\u00b5m. PMOS load sized for same current, W/L\u224828.3 with L=1.8\u00b5m \u2192 W\u224851\u00b5m to get low gds and gain >38dB. Tail NMOS sized for Itail with Vov\u22480.2V, W/L\u224828.3, L=1\u00b5m \u2192 W\u224828\u00b5m. All constraints satisfied.",
+     "W1_um": 7.0,
+     "L1_um": 1.0,
+     "W3_um": 51.0,
+     "L3_um": 1.8,
+     "W5_um": 28.0,
+     "L5_um": 1.0,
+     "Itail_uA": 113.0
+    },
+    "sizing": {
+     "W1": 7e-06,
+     "L1": 1e-06,
+     "W3": 5.1e-05,
+     "L3": 1.8e-06,
+     "W5": 2.8e-05,
+     "L5": 1e-06,
+     "Itail": 0.000113
+    },
+    "metrics": {
+     "ok": true,
+     "corner": "typical",
+     "A0_dB": 46.343605,
+     "GBW_Hz": 15706524.81801913,
+     "PM_deg": 83.58690773011767,
+     "power_W": 0.0007407906,
+     "Vout_dc": 1.652424,
+     "Vtail": 0.4818593,
+     "SR_Vus": 37.666666666666664,
+     "sat_margin_V": {
+      "M1": 1.3719046000000001,
+      "M2": 0.8574643000000001,
+      "M3": 0.8519711999999999,
+      "M4": 1.3644812,
+      "M5": 0.2597329
+     },
+     "all_saturated": true,
+     "swing_V": 2.2219452
+    },
+    "violations": [
+     "GBW 15.71 MHz < 30 MHz"
+    ]
+   }
+  ],
+  "corners_pass": null,
+  "power_frac": null
+ },
+ {
+  "spec": "S6",
+  "mode": "A",
+  "passed": false,
+  "iterations": 1,
+  "trace": [
+   {
+    "iter": 1,
+    "reply": "{\n  \"reasoning\": \"gm1 set for 15\u202fMHz GBW with CL=2\u202fpF, L increased to 0.56\u202f\u00b5m for >48\u202fdB gain, Vov chosen for headroom and slew, M3 sized smaller to lower gm3 and mirror pole, tail current meets power and slew, swing satisfied.\",\n  \"W1_um\": 2.6,\n  \"L1_um\": 0.56,\n  \"W3_um\": 2.3,\n  \"L3_um\": 0.56,\n  \"W5_um\": 5.3,\n  \"L5_um\": 0.56,\n  \"Itail_uA\": 37.6\n}",
+    "proposal": {
+     "reasoning": "gm1 set for 15\u202fMHz GBW with CL=2\u202fpF, L increased to 0.56\u202f\u00b5m for >48\u202fdB gain, Vov chosen for headroom and slew, M3 sized smaller to lower gm3 and mirror pole, tail current meets power and slew, swing satisfied.",
+     "W1_um": 2.6,
+     "L1_um": 0.56,
+     "W3_um": 2.3,
+     "L3_um": 0.56,
+     "W5_um": 5.3,
+     "L5_um": 0.56,
+     "Itail_uA": 37.6
+    },
+    "sizing": {
+     "W1": 2.6e-06,
+     "L1": 5.6e-07,
+     "W3": 2.2999999999999996e-06,
+     "L3": 5.6e-07,
+     "W5": 5.299999999999999e-06,
+     "L5": 5.6e-07,
+     "Itail": 3.76e-05
+    },
+    "metrics": {
+     "ok": true,
+     "corner": "typical",
+     "A0_dB": 40.195365,
+     "GBW_Hz": 11026095.661000343,
+     "PM_deg": 90.0612961322123,
+     "power_W": 0.00024558599999999995,
+     "Vout_dc": 1.653446,
+     "Vtail": 0.5625965,
+     "SR_Vus": 18.8,
+     "sat_margin_V": {
+      "M1": 1.2158233,
+      "M2": 0.8584094999999999,
+      "M3": 0.8509536,
+      "M4": 1.2057710000000001,
+      "M5": 0.34189650000000005
+     },
+     "all_saturated": true,
+     "swing_V": 2.0641809999999996
+    },
+    "violations": [
+     "GBW 11.03 MHz < 15 MHz",
+     "A0 40.2 dB < 48 dB"
+    ]
+   }
+  ],
+  "corners_pass": null,
+  "power_frac": null
+ },
+ {
+  "spec": "S7",
+  "mode": "A",
+  "passed": false,
+  "iterations": 1,
+  "trace": [
+   {
+    "iter": 1,
+    "reply": "{\n  \"reasoning\": \"To meet GBW\u22652\u202fMHz with CL=2\u202fpF, gm1\u224825\u202f\u00b5S is needed. With Itail\u22484.5\u202f\u00b5A (power \u226430\u202f\u00b5W) each input transistor carries \u22482.3\u202f\u00b5A, giving Vov\u22480.18\u202fV and W/L\u22480.7. Choosing L\u22480.7\u202f\u00b5m yields W\u22480.5\u202f\u00b5m for M1/M2. For similar output resistance (\u22655\u202fM\u03a9) and gain \u226542\u202fdB, longer channel devices (L\u22480.7\u202f\u00b5m) are used for the PMOS load, giving W\u22480.8\u202f\u00b5m. The tail NMOS (M5) supplies Itail\u22484.5\u202f\u00b5A, sized with Vov\u22480.2\u202fV, L\u22480.5\u202f\u00b5m, W\u22480.56\u202f\u00b5m. These sizes give the required gain, phase margin, slew rate, and output swing while staying within the power budget.\",\n  \"W1_um\": 0.5,\n  \"L1_um\": 0.7,\n  \"W3_um\": 0.8,\n  \"L3_um\": 0.7,\n  \"W5_um\": 0.56,\n  \"L5_um\": 0.5,\n  \"Itail_uA\": 4.5\n}",
+    "proposal": {
+     "reasoning": "To meet GBW\u22652\u202fMHz with CL=2\u202fpF, gm1\u224825\u202f\u00b5S is needed. With Itail\u22484.5\u202f\u00b5A (power \u226430\u202f\u00b5W) each input transistor carries \u22482.3\u202f\u00b5A, giving Vov\u22480.18\u202fV and W/L\u22480.7. Choosing L\u22480.7\u202f\u00b5m yields W\u22480.5\u202f\u00b5m for M1/M2. For similar output resistance (\u22655\u202fM\u03a9) and gain \u226542\u202fdB, longer channel devices (L\u22480.7\u202f\u00b5m) are used for the PMOS load, giving W\u22480.8\u202f\u00b5m. The tail NMOS (M5) supplies Itail\u22484.5\u202f\u00b5A, sized with Vov\u22480.2\u202fV, L\u22480.5\u202f\u00b5m, W\u22480.56\u202f\u00b5m. These sizes give the required gain, phase margin, slew rate, and output swing while staying within the power budget.",
+     "W1_um": 0.5,
+     "L1_um": 0.7,
+     "W3_um": 0.8,
+     "L3_um": 0.7,
+     "W5_um": 0.56,
+     "L5_um": 0.5,
+     "Itail_uA": 4.5
+    },
+    "sizing": {
+     "W1": 5e-07,
+     "L1": 7e-07,
+     "W3": 8e-07,
+     "L3": 7e-07,
+     "W5": 5.6e-07,
+     "L5": 5e-07,
+     "Itail": 4.5e-06
+    },
+    "metrics": {
+     "ok": true,
+     "corner": "typical",
+     "A0_dB": 42.210966,
+     "GBW_Hz": 1442428.5432322477,
+     "PM_deg": 90.31310634816684,
+     "power_W": 2.9307993e-05,
+     "Vout_dc": 1.654047,
+     "Vtail": 0.5985479,
+     "SR_Vus": 2.25,
+     "sat_margin_V": {
+      "M1": 1.3741291,
+      "M2": 0.8375710999999999,
+      "M3": 0.8174233999999999,
+      "M4": 1.3508152,
+      "M5": 0.36063850000000003
+     },
+     "all_saturated": true,
+     "swing_V": 2.1883863999999997
+    },
+    "violations": [
+     "GBW 1.44 MHz < 2 MHz"
+    ]
+   }
+  ],
+  "corners_pass": null,
+  "power_frac": null
+ },
+ {
+  "spec": "S8",
+  "mode": "A",
+  "passed": false,
+  "iterations": 1,
+  "trace": [
+   {
+    "iter": 1,
+    "reply": "{\n  \"reasoning\": \"Chosen overdrives Vov_n=0.2V, Vov_p=0.4V give gm1\u22480.55mS \u2192 GBW\u224844MHz, gain\u224849dB, mirror pole\u224822MHz \u2192 PM>60\u00b0, power\u22480.73mW, swing\u22482.5V >1.5V.\",\n  \"W1_um\": 6.9,\n  \"L1_um\": 0.5,\n  \"W3_um\": 6.9,\n  \"L3_um\": 0.8,\n  \"W5_um\": 13.8,\n  \"L5_um\": 0.5,\n  \"Itail_uA\": 110\n}",
+    "proposal": {
+     "reasoning": "Chosen overdrives Vov_n=0.2V, Vov_p=0.4V give gm1\u22480.55mS \u2192 GBW\u224844MHz, gain\u224849dB, mirror pole\u224822MHz \u2192 PM>60\u00b0, power\u22480.73mW, swing\u22482.5V >1.5V.",
+     "W1_um": 6.9,
+     "L1_um": 0.5,
+     "W3_um": 6.9,
+     "L3_um": 0.8,
+     "W5_um": 13.8,
+     "L5_um": 0.5,
+     "Itail_uA": 110
+    },
+    "sizing": {
+     "W1": 6.9e-06,
+     "L1": 5e-07,
+     "W3": 6.9e-06,
+     "L3": 8e-07,
+     "W5": 1.38e-05,
+     "L5": 5e-07,
+     "Itail": 0.00010999999999999999
+    },
+    "metrics": {
+     "ok": true,
+     "corner": "typical",
+     "A0_dB": 40.338284,
+     "GBW_Hz": 32326018.01132533,
+     "PM_deg": 88.4426000902608,
+     "power_W": 0.0007170966,
+     "Vout_dc": 1.652225,
+     "Vtail": 0.5659746,
+     "SR_Vus": 55.0,
+     "sat_margin_V": {
+      "M1": 1.0978108,
+      "M2": 0.8612002999999999,
+      "M3": 0.9063834,
+      "M4": 1.141573,
+      "M5": 0.3473234
+     },
+     "all_saturated": true,
+     "swing_V": 2.0027736999999997
+    },
+    "violations": [
+     "GBW 32.33 MHz < 40 MHz",
+     "A0 40.3 dB < 42 dB"
+    ]
+   }
+  ],
+  "corners_pass": null,
+  "power_frac": null
+ },
+ {
+  "spec": "S9",
+  "mode": "A",
+  "passed": false,
+  "iterations": 1,
+  "trace": [
+   {
+    "iter": 1,
+    "reply": "{\n  \"reasoning\": \"Chosen Itail=75\u00b5A to meet power budget. Used Vov_n\u22480.15V for NMOS input pair to get high gain (gain\u22481/(\u03bb\u00b7Vov) with \u03bb\u22480.004 at L=2\u00b5m giving >65dB). Vov_p\u22480.2V for PMOS load to keep swing \u22651.5V. L=2\u00b5m for all devices (max allowed) to minimize channel length modulation. Calculated widths from Id = \u00bd\u00b7\u03bcCox\u00b7(W/L)\u00b7Vov\u00b2 (\u03bcnCox\u2248200\u00b5A/V\u00b2\u00b7\u00b5m, \u03bcpCox\u2248100\u00b5A/V\u00b2\u00b7\u00b5m). Resulting gm\u2248500\u00b5S gives GBW\u224840MHz >10MHz, SR\u224837.5V/\u00b5s, power\u2248495\u00b5W.\",\n  \"W1_um\": 33.0,\n  \"L1_um\": 2.0,\n  \"W3_um\": 37.5,\n  \"L3_um\": 2.0,\n  \"W5_um\": 37.5,\n  \"L5_um\": 2.0,\n  \"Itail_uA\": 75.0\n}",
+    "proposal": {
+     "reasoning": "Chosen Itail=75\u00b5A to meet power budget. Used Vov_n\u22480.15V for NMOS input pair to get high gain (gain\u22481/(\u03bb\u00b7Vov) with \u03bb\u22480.004 at L=2\u00b5m giving >65dB). Vov_p\u22480.2V for PMOS load to keep swing \u22651.5V. L=2\u00b5m for all devices (max allowed) to minimize channel length modulation. Calculated widths from Id = \u00bd\u00b7\u03bcCox\u00b7(W/L)\u00b7Vov\u00b2 (\u03bcnCox\u2248200\u00b5A/V\u00b2\u00b7\u00b5m, \u03bcpCox\u2248100\u00b5A/V\u00b2\u00b7\u00b5m). Resulting gm\u2248500\u00b5S gives GBW\u224840MHz >10MHz, SR\u224837.5V/\u00b5s, power\u2248495\u00b5W.",
+     "W1_um": 33.0,
+     "L1_um": 2.0,
+     "W3_um": 37.5,
+     "L3_um": 2.0,
+     "W5_um": 37.5,
+     "L5_um": 2.0,
+     "Itail_uA": 75.0
+    },
+    "sizing": {
+     "W1": 3.2999999999999996e-05,
+     "L1": 2e-06,
+     "W3": 3.75e-05,
+     "L3": 2e-06,
+     "W5": 3.75e-05,
+     "L5": 2e-06,
+     "Itail": 7.5e-05
+    },
+    "metrics": {
+     "ok": true,
+     "corner": "typical",
+     "A0_dB": 52.123073,
+     "GBW_Hz": 26459875.638776857,
+     "PM_deg": 75.32569775654405,
+     "power_W": 0.0004937228999999999,
+     "Vout_dc": 1.65127,
+     "Vtail": 0.6144014,
+     "SR_Vus": 37.5,
+     "sat_margin_V": {
+      "M1": 1.3752418,
+      "M2": 0.8643366,
+      "M3": 0.8545282,
+      "M4": 1.3645002000000002,
+      "M5": 0.4027112
+     },
+     "all_saturated": true,
+     "swing_V": 2.2288364
+    },
+    "violations": [
+     "A0 52.1 dB < 65 dB"
+    ]
+   }
+  ],
+  "corners_pass": null,
+  "power_frac": null
+ },
+ {
+  "spec": "S10",
+  "mode": "A",
+  "passed": false,
+  "iterations": 1,
+  "trace": [
+   {
+    "iter": 1,
+    "reply": "{\n  \"reasoning\": \"Given the 100\u202f\u00b5W power limit (Itail \u2264\u202f15\u202f\u00b5A) the achievable gm per input device (~150\u202f\u00b5S) yields a GBW \u2248\u202f5\u202fMHz, far below the 100\u202fMHz requirement. Therefore the design is limited by power and cannot meet the GBW spec; the following sizes use the maximum allowable tail current while keeping Vov\u22480.2\u202fV for reasonable over\u2011drive.\",\n  \"W1_um\": 0.55,\n  \"L1_um\": 0.28,\n  \"W3_um\": 1.10,\n  \"L3_um\": 0.28,\n  \"W5_um\": 0.55,\n  \"L5_um\": 0.28,\n  \"Itail_uA\": 15.0\n}",
+    "proposal": {
+     "reasoning": "Given the 100\u202f\u00b5W power limit (Itail \u2264\u202f15\u202f\u00b5A) the achievable gm per input device (~150\u202f\u00b5S) yields a GBW \u2248\u202f5\u202fMHz, far below the 100\u202fMHz requirement. Therefore the design is limited by power and cannot meet the GBW spec; the following sizes use the maximum allowable tail current while keeping Vov\u22480.2\u202fV for reasonable over\u2011drive.",
+     "W1_um": 0.55,
+     "L1_um": 0.28,
+     "W3_um": 1.1,
+     "L3_um": 0.28,
+     "W5_um": 0.55,
+     "L5_um": 0.28,
+     "Itail_uA": 15.0
+    },
+    "sizing": {
+     "W1": 5.5e-07,
+     "L1": 2.8e-07,
+     "W3": 1.1e-06,
+     "L3": 2.8e-07,
+     "W5": 5.5e-07,
+     "L5": 2.8e-07,
+     "Itail": 1.4999999999999999e-05
+    },
+    "metrics": {
+     "ok": true,
+     "corner": "typical",
+     "A0_dB": 23.818033,
+     "GBW_Hz": 1638905.724169532,
+     "PM_deg": 93.66263708236744,
+     "power_W": 9.653259e-05,
+     "Vout_dc": 1.689488,
+     "Vtail": 0.7287536,
+     "SR_Vus": 3.0,
+     "sat_margin_V": {
+      "M1": 1.3806243999999999,
+      "M2": 0.74098,
+      "M3": 0.6972837000000001,
+      "M4": 1.3158725,
+      "M5": 0.4379405
+     },
+     "all_saturated": true,
+     "swing_V": 2.0568522999999996
+    },
+    "violations": [
+     "GBW 1.64 MHz < 100 MHz",
+     "A0 23.8 dB < 35 dB"
+    ]
+   }
+  ],
+  "corners_pass": null,
+  "power_frac": null
+ },
+ {
+  "spec": "S1",
+  "mode": "B",
+  "passed": false,
+  "iterations": 1,
+  "trace": [
+   {
+    "iter": 1,
+    "reply": "{\"reasoning\":\"Feasible with Itail=30\u202f\u00b5A, gm/Id=24 for M1 and M3, L=0.5\u202f\u00b5m, meeting GBW (gm1\u2248360\u202f\u00b5S \u2192 GBW\u224810\u202fMHz), DC gain (>40\u202fdB via high gm/gds), phase margin (>60\u00b0 as mirror pole \u224826\u202fMHz >2\u00d7GBW), power\u2248198\u202f\u00b5W, slew\u224815\u202fV/\u00b5s, swing satisfied. Tail device uses moderate bias (gm/Id\u224810).\",\"gmid1\":24,\"L1_um\":0.5,\"gmid3\":24,\"L3_um\":0.5,\"gmid5\":10,\"L5_um\":0.5,\"Itail_uA\":30}",
+    "violations": [
+     "invalid proposal: W3=2.83e+03 um outside 0.22..2000 um"
+    ]
+   }
+  ],
+  "corners_pass": null,
+  "power_frac": null
+ },
+ {
+  "spec": "S2",
+  "mode": "B",
+  "passed": false,
+  "iterations": 1,
+  "trace": [
+   {
+    "iter": 1,
+    "reply": "{\n  \"reasoning\": \"GBW >=20MHz requires gm1 >= 2\u03c0\u00b720e6\u00b72pF \u2248 250\u00b5S. Choosing gm/Id = 10 gives Id (M1) = gm1/gmid = 25\u00b5A, so Itail = 2\u00b7Id = 50\u00b5A. Power = 3.3V\u00b72\u00b7Itail = 330\u00b5W < 400\u00b5W. With L1=0.5\u00b5m (NMOS) gm/gds\u2248174, giving gds2\u224825\u00b5A/174\u22480.144\u00b5S. Using L3=2\u00b5m (PMOS) gm/gds\u22481258, giving gds4\u224825\u00b5A/1258\u22480.020\u00b5S. Total gds\u22480.164\u00b5S, so A0\u2248gm1/gds\u2248250\u00b5S/0.164\u00b5S\u22481525 (\u224863dB) >40dB. Mirror pole is pushed high by the long L=2\u00b5m on M3, ensuring phase margin >60\u00b0. Slew rate = Itail/CL = 50\u00b5A/2pF = 25V/\u00b5s, and output swing >1.5V is satisfied with the chosen over\u2011drive voltages. All specs are met.\",\n  \"gmid1\": 10,\n  \"L1_um\": 0.5,\n  \"gmid3\": 10,\n  \"L3_um\": 2,\n  \"gmid5\": 10,\n  \"L5_um\": 2,\n  \"Itail_uA\": 50\n}",
+    "proposal": {
+     "reasoning": "GBW >=20MHz requires gm1 >= 2\u03c0\u00b720e6\u00b72pF \u2248 250\u00b5S. Choosing gm/Id = 10 gives Id (M1) = gm1/gmid = 25\u00b5A, so Itail = 2\u00b7Id = 50\u00b5A. Power = 3.3V\u00b72\u00b7Itail = 330\u00b5W < 400\u00b5W. With L1=0.5\u00b5m (NMOS) gm/gds\u2248174, giving gds2\u224825\u00b5A/174\u22480.144\u00b5S. Using L3=2\u00b5m (PMOS) gm/gds\u22481258, giving gds4\u224825\u00b5A/1258\u22480.020\u00b5S. Total gds\u22480.164\u00b5S, so A0\u2248gm1/gds\u2248250\u00b5S/0.164\u00b5S\u22481525 (\u224863dB) >40dB. Mirror pole is pushed high by the long L=2\u00b5m on M3, ensuring phase margin >60\u00b0. Slew rate = Itail/CL = 50\u00b5A/2pF = 25V/\u00b5s, and output swing >1.5V is satisfied with the chosen over\u2011drive voltages. All specs are met.",
+     "gmid1": 10,
+     "L1_um": 0.5,
+     "gmid3": 10,
+     "L3_um": 2,
+     "gmid5": 10,
+     "L5_um": 2,
+     "Itail_uA": 50
+    },
+    "sizing": {
+     "L1": 5e-07,
+     "L3": 2e-06,
+     "L5": 2e-06,
+     "W1": 5.705939715340527e-06,
+     "W3": 0.00010458673585800119,
+     "W5": 4.7376430193919836e-05,
+     "Itail": 4.9999999999999996e-05
+    },
+    "metrics": {
+     "ok": true,
+     "corner": "typical",
+     "A0_dB": 42.502811,
+     "GBW_Hz": 17026367.202906758,
+     "PM_deg": 74.82782297753565,
+     "power_W": 0.00032928258,
+     "Vout_dc": 1.654983,
+     "Vtail": 0.6196834,
+     "SR_Vus": 25.0,
+     "sat_margin_V": {
+      "M1": 1.5695005000000002,
+      "M2": 0.8582047000000002,
+      "M3": 0.789695,
+      "M4": 1.4981217,
+      "M5": 0.4600898
+     },
+     "all_saturated": true,
+     "swing_V": 2.3563259999999997
+    },
+    "violations": [
+     "GBW 17.03 MHz < 20 MHz"
+    ]
+   }
+  ],
+  "corners_pass": null,
+  "power_frac": null
+ },
+ {
+  "spec": "S3",
+  "mode": "B",
+  "passed": false,
+  "iterations": 1,
+  "trace": [
+   {
+    "iter": 1,
+    "reply": "{\n  \"reasoning\": \"GBW = gm1/(2\u03c0CL) with gm1 = (gm/Id)*Id = 10*31.4\u00b5A = 0.314mS gives GBW\u224850MHz. Tail current Itail = 62.8\u00b5A yields total supply current 2*Itail = 125.6\u00b5A \u2192 power \u2248415\u00b5W <1mW. Using L1=0.5\u00b5m (NMOS gm/gds=174) and L3=0.5\u00b5m (PMOS gm/gds=261) gives A0 = 1/(1/174+1/261) \u2248104 (>35dB). Mirror pole f_p = gm3/(2\u03c0(CL+ Cgs4)) \u22480.314mS/(2\u03c0\u00b71.06pF) \u224847MHz, so PM >60\u00b0. Slew rate = Itail/CL \u224862.8V/\u00b5s. Output swing >3V (>1.5V). All specs met.\",\n  \"gmid1\": 10,\n  \"L1_um\": 0.5,\n  \"gmid3\": 10,\n  \"L3_um\": 0.5,\n  \"gmid5\": 10,\n  \"L5_um\": 0.28,\n  \"Itail_uA\": 62.8\n}",
+    "proposal": {
+     "reasoning": "GBW = gm1/(2\u03c0CL) with gm1 = (gm/Id)*Id = 10*31.4\u00b5A = 0.314mS gives GBW\u224850MHz. Tail current Itail = 62.8\u00b5A yields total supply current 2*Itail = 125.6\u00b5A \u2192 power \u2248415\u00b5W <1mW. Using L1=0.5\u00b5m (NMOS gm/gds=174) and L3=0.5\u00b5m (PMOS gm/gds=261) gives A0 = 1/(1/174+1/261) \u2248104 (>35dB). Mirror pole f_p = gm3/(2\u03c0(CL+ Cgs4)) \u22480.314mS/(2\u03c0\u00b71.06pF) \u224847MHz, so PM >60\u00b0. Slew rate = Itail/CL \u224862.8V/\u00b5s. Output swing >3V (>1.5V). All specs met.",
+     "gmid1": 10,
+     "L1_um": 0.5,
+     "gmid3": 10,
+     "L3_um": 0.5,
+     "gmid5": 10,
+     "L5_um": 0.28,
+     "Itail_uA": 62.8
+    },
+    "sizing": {
+     "L1": 5e-07,
+     "L3": 5e-07,
+     "L5": 2.8e-07,
+     "W1": 7.166660282467702e-06,
+     "W3": 2.4823589895900027e-05,
+     "W5": 9.179363782296351e-06,
+     "Itail": 6.28e-05
+    },
+    "metrics": {
+     "ok": true,
+     "corner": "typical",
+     "A0_dB": 39.63429,
+     "GBW_Hz": 47033796.425433345,
+     "PM_deg": 86.83364964764176,
+     "power_W": 0.00040408830000000003,
+     "Vout_dc": 1.657327,
+     "Vtail": 0.6243223,
+     "SR_Vus": 62.8,
+     "sat_margin_V": {
+      "M1": 1.5656837,
+      "M2": 0.8588971,
+      "M3": 0.7719424,
+      "M4": 1.4736895,
+      "M5": 0.4713749
+     },
+     "all_saturated": true,
+     "swing_V": 2.3325863
+    },
+    "violations": [
+     "GBW 47.03 MHz < 50 MHz"
+    ]
+   }
+  ],
+  "corners_pass": null,
+  "power_frac": null
+ },
+ {
+  "spec": "S4",
+  "mode": "B",
+  "passed": false,
+  "iterations": 1,
+  "trace": [
+   {
+    "iter": 1,
+    "reply": "{\n  \"reasoning\": \"INFEASIBLE: none \u2013 the OTA meets all specs with Itail\u224815\u00b5A, gm/Id\u224821 for M1/M2, long L=2\u00b5m for high output resistance, gm/Id\u22484 for PMOS load to lower the mirror pole, and gm/Id\u224810 for the tail NMOS. Power\u224899\u00b5W, GBW\u22485MHz, A0\u224847dB, PM\u224860\u00b0, SR\u22483V/\u00b5s, swing\u22482.7V.\",\n  \"gmid1\": 21,\n  \"L1_um\": 2.0,\n  \"gmid3\": 4,\n  \"L3_um\": 2.0,\n  \"gmid5\": 10,\n  \"L5_um\": 2.0,\n  \"Itail_uA\": 15.0\n}",
+    "proposal": {
+     "reasoning": "INFEASIBLE: none \u2013 the OTA meets all specs with Itail\u224815\u00b5A, gm/Id\u224821 for M1/M2, long L=2\u00b5m for high output resistance, gm/Id\u22484 for PMOS load to lower the mirror pole, and gm/Id\u224810 for the tail NMOS. Power\u224899\u00b5W, GBW\u22485MHz, A0\u224847dB, PM\u224860\u00b0, SR\u22483V/\u00b5s, swing\u22482.7V.",
+     "gmid1": 21,
+     "L1_um": 2.0,
+     "gmid3": 4,
+     "L3_um": 2.0,
+     "gmid5": 10,
+     "L5_um": 2.0,
+     "Itail_uA": 15.0
+    },
+    "sizing": {
+     "L1": 2e-06,
+     "L3": 2e-06,
+     "L5": 2e-06,
+     "W1": 0.0001491664240160291,
+     "W3": 4.757206445308419e-06,
+     "W5": 1.421292905817595e-05,
+     "Itail": 1.4999999999999999e-05
+    },
+    "metrics": {
+     "ok": true,
+     "corner": "typical",
+     "A0_dB": 53.139066,
+     "GBW_Hz": 4866342.215097664,
+     "PM_deg": 82.56905198373522,
+     "power_W": 9.895083e-05,
+     "Vout_dc": 1.650901,
+     "Vtail": 0.7713347,
+     "SR_Vus": 3.0,
+     "sat_margin_V": {
+      "M1": 1.22546694,
+      "M2": 0.81892933,
+      "M3": 0.886196,
+      "M4": 1.292486,
+      "M5": 0.6117314
+     },
+     "all_saturated": true,
+     "swing_V": 2.1114156299999998
+    },
+    "violations": [
+     "GBW 4.87 MHz < 5 MHz"
+    ]
+   }
+  ],
+  "corners_pass": null,
+  "power_frac": null
+ },
+ {
+  "spec": "S5",
+  "mode": "B",
+  "passed": false,
+  "iterations": 1,
+  "trace": [
+   {
+    "iter": 1,
+    "reply": "{\n  \"reasoning\": \"INFEASIBLE: Phase margin limited by mirror pole (~30\u202fMHz) close to GBW, making 70\u00b0 hard to guarantee, but other specs are met.\",\n  \"gmid1\": 10,\n  \"L1_um\": 1.0,\n  \"gmid3\": 10,\n  \"L3_um\": 0.28,\n  \"gmid5\": 10,\n  \"L5_um\": 0.5,\n  \"Itail_uA\": 113\n}",
+    "proposal": {
+     "reasoning": "INFEASIBLE: Phase margin limited by mirror pole (~30\u202fMHz) close to GBW, making 70\u00b0 hard to guarantee, but other specs are met.",
+     "gmid1": 10,
+     "L1_um": 1.0,
+     "gmid3": 10,
+     "L3_um": 0.28,
+     "gmid5": 10,
+     "L5_um": 0.5,
+     "Itail_uA": 113
+    },
+    "sizing": {
+     "L1": 1e-06,
+     "L3": 2.8e-07,
+     "L5": 5e-07,
+     "W1": 2.5037680121869824e-05,
+     "W3": 2.1635496066052607e-05,
+     "W5": 2.5790847513339184e-05,
+     "Itail": 0.000113
+    },
+    "metrics": {
+     "ok": true,
+     "corner": "typical",
+     "A0_dB": 33.533182,
+     "GBW_Hz": 30460912.042570658,
+     "PM_deg": 89.69106873693167,
+     "power_W": 0.0007391967,
+     "Vout_dc": 1.666449,
+     "Vtail": 0.6197967,
+     "SR_Vus": 37.666666666666664,
+     "sat_margin_V": {
+      "M1": 1.6282720000000002,
+      "M2": 0.8629186999999999,
+      "M3": 0.7030470999999999,
+      "M4": 1.4488457,
+      "M5": 0.4501408
+     },
+     "all_saturated": true,
+     "swing_V": 2.3117647
+    },
+    "violations": [
+     "A0 33.5 dB < 38 dB"
+    ]
+   }
+  ],
+  "corners_pass": null,
+  "power_frac": null
+ },
+ {
+  "spec": "S6",
+  "mode": "B",
+  "passed": false,
+  "iterations": 1,
+  "trace": [
+   {
+    "iter": 1,
+    "reply": "{\n  \"reasoning\": \"To meet GBW: gm1 >= 2\u03c0\u00b715MHz\u00b72pF \u2248 188\u00b5S. With gm/Id = 10, each input transistor needs Id = gm1/10 \u2248 19\u00b5A, so Itail \u2248 38\u00b5A (choose 40\u00b5A for margin). Power = 3.3V\u00b72\u00b740\u00b5A \u2248 264\u00b5W < 500\u00b5W. Gain depends on output resistances: choose long channel NMOS (L=2\u00b5m, gm/gds\u2248580) and long channel PMOS (L=2\u00b5m, gm/gds\u22481258). Parallel resistance \u2248 397 \u2192 A0 \u2248 397 (>251 required for 48dB). Slew rate = Itail/CL = 40\u00b5A/2pF = 20V/\u00b5s, ample. Output swing >1.5V is feasible with Vdsat \u22480.2\u20110.3V for both devices. Phase margin satisfied as mirror pole is pushed low by high L PMOS. Thus the chosen operating points meet all specs.\",\n  \"gmid1\": 10,\n  \"L1_um\": 2.0,\n  \"gmid3\": 10,\n  \"L3_um\": 2.0,\n  \"gmid5\": 10,\n  \"L5_um\": 0.5,\n  \"Itail_uA\": 40\n}",
+    "proposal": {
+     "reasoning": "To meet GBW: gm1 >= 2\u03c0\u00b715MHz\u00b72pF \u2248 188\u00b5S. With gm/Id = 10, each input transistor needs Id = gm1/10 \u2248 19\u00b5A, so Itail \u2248 38\u00b5A (choose 40\u00b5A for margin). Power = 3.3V\u00b72\u00b740\u00b5A \u2248 264\u00b5W < 500\u00b5W. Gain depends on output resistances: choose long channel NMOS (L=2\u00b5m, gm/gds\u2248580) and long channel PMOS (L=2\u00b5m, gm/gds\u22481258). Parallel resistance \u2248 397 \u2192 A0 \u2248 397 (>251 required for 48dB). Slew rate = Itail/CL = 40\u00b5A/2pF = 20V/\u00b5s, ample. Output swing >1.5V is feasible with Vdsat \u22480.2\u20110.3V for both devices. Phase margin satisfied as mirror pole is pushed low by high L PMOS. Thus the chosen operating points meet all specs.",
+     "gmid1": 10,
+     "L1_um": 2.0,
+     "gmid3": 10,
+     "L3_um": 2.0,
+     "gmid5": 10,
+     "L5_um": 0.5,
+     "Itail_uA": 40
+    },
+    "sizing": {
+     "L1": 2e-06,
+     "L3": 2e-06,
+     "L5": 5e-07,
+     "W1": 1.8950572077567934e-05,
+     "W3": 8.366938868640095e-05,
+     "W5": 9.129503544544844e-06,
+     "Itail": 3.9999999999999996e-05
+    },
+    "metrics": {
+     "ok": true,
+     "corner": "typical",
+     "A0_dB": 51.937135,
+     "GBW_Hz": 14081375.035470203,
+     "PM_deg": 75.55001591210237,
+     "power_W": 0.00026167515,
+     "Vout_dc": 1.651823,
+     "Vtail": 0.6213476,
+     "SR_Vus": 20.0,
+     "sat_margin_V": {
+      "M1": 1.578349,
+      "M2": 0.8640944,
+      "M3": 0.7892169,
+      "M4": 1.5021468,
+      "M5": 0.45153109999999996
+     },
+     "all_saturated": true,
+     "swing_V": 2.3662415999999995
+    },
+    "violations": [
+     "GBW 14.08 MHz < 15 MHz"
+    ]
+   }
+  ],
+  "corners_pass": null,
+  "power_frac": null
+ },
+ {
+  "spec": "S7",
+  "mode": "B",
+  "passed": true,
+  "iterations": 1,
+  "trace": [
+   {
+    "iter": 1,
+    "reply": "{\n  \"reasoning\": \"INFEASIBLE: none \u2013 specs can be met. Chosen Itail = 4.55 \u00b5A gives total power 30 \u00b5W. With gm/Id\u224812 for NMOS inputs (L=1\u202f\u00b5m) gm1\u224827.2\u202f\u00b5S \u2192 GBW\u22482.17\u202fMHz. Using long devices (L=1\u202f\u00b5m) gives high gm/gds (\u2248380 NMOS, \u2248650 PMOS) so output resistance is large, yielding gain \u224848\u202fdB (>42\u202fdB). Mirror pole with gm3\u224822.7\u202f\u00b5S and small internal capacitance stays well above GBW, giving PM>60\u00b0. Slew rate = Itail/CL \u22482.3\u202fV/\u00b5s and output swing >1.5\u202fV are satisfied.\",\n  \"gmid1\": 12,\n  \"L1_um\": 1.0,\n  \"gmid3\": 10,\n  \"L3_um\": 1.0,\n  \"gmid5\": 10,\n  \"L5_um\": 0.5,\n  \"Itail_uA\": 4.55\n}",
+    "proposal": {
+     "reasoning": "INFEASIBLE: none \u2013 specs can be met. Chosen Itail = 4.55 \u00b5A gives total power 30 \u00b5W. With gm/Id\u224812 for NMOS inputs (L=1\u202f\u00b5m) gm1\u224827.2\u202f\u00b5S \u2192 GBW\u22482.17\u202fMHz. Using long devices (L=1\u202f\u00b5m) gives high gm/gds (\u2248380 NMOS, \u2248650 PMOS) so output resistance is large, yielding gain \u224848\u202fdB (>42\u202fdB). Mirror pole with gm3\u224822.7\u202f\u00b5S and small internal capacitance stays well above GBW, giving PM>60\u00b0. Slew rate = Itail/CL \u22482.3\u202fV/\u00b5s and output swing >1.5\u202fV are satisfied.",
+     "gmid1": 12,
+     "L1_um": 1.0,
+     "gmid3": 10,
+     "L3_um": 1.0,
+     "gmid5": 10,
+     "L5_um": 0.5,
+     "Itail_uA": 4.55
+    },
+    "sizing": {
+     "L1": 1e-06,
+     "L3": 1e-06,
+     "L5": 5e-07,
+     "W1": 1.6200758320280183e-06,
+     "W3": 4.284793494857425e-06,
+     "W5": 1.0384810281919759e-06,
+     "Itail": 4.55e-06
+    },
+    "metrics": {
+     "ok": true,
+     "corner": "typical",
+     "A0_dB": 47.36521,
+     "GBW_Hz": 2086309.8900330912,
+     "PM_deg": 89.60514738312497,
+     "power_W": 2.9755836e-05,
+     "Vout_dc": 1.653006,
+     "Vtail": 0.6434919,
+     "SR_Vus": 2.275,
+     "sat_margin_V": {
+      "M1": 1.5654485999999999,
+      "M2": 0.8592031,
+      "M3": 0.7870136,
+      "M4": 1.4910956,
+      "M5": 0.4621232
+     },
+     "all_saturated": true,
+     "swing_V": 2.3502988
+    },
+    "violations": []
+   }
+  ],
+  "corners_pass": false,
+  "power_frac": 0.9918612
+ },
+ {
+  "spec": "S8",
+  "mode": "B",
+  "passed": false,
+  "iterations": 1,
+  "trace": [
+   {
+    "iter": 1,
+    "reply": "{\n  \"reasoning\": \"INFEASIBLE: specs can be met. GBW 40MHz requires gm1\u22480.503mS. With Itail=227\u00b5A (power 1.5mW) gm/Id\u22484.4 gives gm1\u22480.503mS. Using L1=1\u00b5m (gm/gds\u2248387) and L3=1\u00b5m (gm/gds\u2248650) yields DC gain \u2248148 (>42dB). Choosing gmid3\u224812 gives mirror pole \u2248108MHz (>2.5\u00d7GBW) for PM\u224860\u00b0. Output swing satisfied with Vdsat\u22480.2\u20110.3V. \",\n  \"gmid1\": 4.4,\n  \"L1_um\": 1.0,\n  \"gmid3\": 12,\n  \"L3_um\": 1.0,\n  \"gmid5\": 6,\n  \"L5_um\": 0.5,\n  \"Itail_uA\": 227\n}",
+    "proposal": {
+     "reasoning": "INFEASIBLE: specs can be met. GBW 40MHz requires gm1\u22480.503mS. With Itail=227\u00b5A (power 1.5mW) gm/Id\u22484.4 gives gm1\u22480.503mS. Using L1=1\u00b5m (gm/gds\u2248387) and L3=1\u00b5m (gm/gds\u2248650) yields DC gain \u2248148 (>42dB). Choosing gmid3\u224812 gives mirror pole \u2248108MHz (>2.5\u00d7GBW) for PM\u224860\u00b0. Output swing satisfied with Vdsat\u22480.2\u20110.3V. ",
+     "gmid1": 4.4,
+     "L1_um": 1.0,
+     "gmid3": 12,
+     "L3_um": 1.0,
+     "gmid5": 6,
+     "L5_um": 0.5,
+     "Itail_uA": 227
+    },
+    "sizing": {
+     "L1": 1e-06,
+     "L3": 1e-06,
+     "L5": 5e-07,
+     "W1": 9.47155670709467e-06,
+     "W3": 0.0003424114330957645,
+     "W5": 1.7917500717426575e-05,
+     "Itail": 0.000227
+    },
+    "metrics": {
+     "ok": true,
+     "corner": "typical",
+     "A0_dB": 42.730135,
+     "GBW_Hz": 31550702.02013981,
+     "PM_deg": 79.42240380205136,
+     "power_W": 0.0014661339,
+     "Vout_dc": 1.655615,
+     "Vtail": 0.4283761,
+     "SR_Vus": 113.5,
+     "sat_margin_V": {
+      "M1": 1.6079718,
+      "M2": 0.8571390999999999,
+      "M3": 0.7723666,
+      "M4": 1.5187934,
+      "M5": 0.16044009999999997
+     },
+     "all_saturated": true,
+     "swing_V": 2.3759324
+    },
+    "violations": [
+     "GBW 31.55 MHz < 40 MHz"
+    ]
+   }
+  ],
+  "corners_pass": null,
+  "power_frac": null
+ },
+ {
+  "spec": "S9",
+  "mode": "B",
+  "passed": false,
+  "iterations": 1,
+  "trace": [
+   {
+    "iter": 1,
+    "reply": "{\n  \"reasoning\": \"INFEASIBLE: With a 500\u202f\u00b5W power budget the tail current is limited to Itail \u2264 75.8\u202f\u00b5A (since P = VDD\u00b72\u00b7Itail). Each input transistor then carries \u226437.9\u202f\u00b5A. Even at the most favorable device length (L=2\u202f\u00b5m) and the highest allowed gm/Id (24\u202fV\u207b\u00b9), the achievable transconductance is gm1 = 24\u00b737.9\u202f\u00b5A \u2248 0.91\u202fmS. The output conductances of the NMOS and PMOS loads at L=2\u202f\u00b5m (gm/gds \u2248 580 and 1258) give gds2 \u2248 1.6\u202f\u00b5S and gds4 \u2248 0.72\u202f\u00b5S, so the DC gain gm1/(gds2+gds4) \u2248 0.91\u202fmS / 2.3\u202f\u00b5S \u2248 395 (\u224852\u202fdB), well below the required 65\u202fdB. Achieving 65\u202fdB would require gm1 \u2248 1.7\u202fmS, which would need gm/Id \u2248 45\u202fV\u207b\u00b9, outside the allowed range (4\u201324\u202fV\u207b\u00b9). Therefore the specifications cannot be met with this topology and power limit.\",\n  \"gmid1\": 10,\n  \"L1_um\": 2,\n  \"gmid3\": 10,\n  \"L3_um\": 2,\n  \"gmid5\": 10,\n  \"L5_um\": 0.5,\n  \"Itail_uA\": 75\n}",
+    "proposal": {
+     "reasoning": "INFEASIBLE: With a 500\u202f\u00b5W power budget the tail current is limited to Itail \u2264 75.8\u202f\u00b5A (since P = VDD\u00b72\u00b7Itail). Each input transistor then carries \u226437.9\u202f\u00b5A. Even at the most favorable device length (L=2\u202f\u00b5m) and the highest allowed gm/Id (24\u202fV\u207b\u00b9), the achievable transconductance is gm1 = 24\u00b737.9\u202f\u00b5A \u2248 0.91\u202fmS. The output conductances of the NMOS and PMOS loads at L=2\u202f\u00b5m (gm/gds \u2248 580 and 1258) give gds2 \u2248 1.6\u202f\u00b5S and gds4 \u2248 0.72\u202f\u00b5S, so the DC gain gm1/(gds2+gds4) \u2248 0.91\u202fmS / 2.3\u202f\u00b5S \u2248 395 (\u224852\u202fdB), well below the required 65\u202fdB. Achieving 65\u202fdB would require gm1 \u2248 1.7\u202fmS, which would need gm/Id \u2248 45\u202fV\u207b\u00b9, outside the allowed range (4\u201324\u202fV\u207b\u00b9). Therefore the specifications cannot be met with this topology and power limit.",
+     "gmid1": 10,
+     "L1_um": 2,
+     "gmid3": 10,
+     "L3_um": 2,
+     "gmid5": 10,
+     "L5_um": 0.5,
+     "Itail_uA": 75
+    },
+    "sizing": {
+     "L1": 2e-06,
+     "L3": 2e-06,
+     "L5": 5e-07,
+     "W1": 3.553232264543988e-05,
+     "W3": 0.00015688010378700178,
+     "W5": 1.711781914602158e-05,
+     "Itail": 7.5e-05
+    },
+    "metrics": {
+     "ok": true,
+     "corner": "typical",
+     "A0_dB": 51.937065,
+     "GBW_Hz": 23033921.267145522,
+     "PM_deg": 69.23697929872424,
+     "power_W": 0.0004906506,
+     "Vout_dc": 1.651823,
+     "Vtail": 0.6213392,
+     "SR_Vus": 37.5,
+     "sat_margin_V": {
+      "M1": 1.5783281,
+      "M2": 0.8640945,
+      "M3": 0.7892246999999999,
+      "M4": 1.5021328,
+      "M5": 0.45170849999999996
+     },
+     "all_saturated": true,
+     "swing_V": 2.3662281
+    },
+    "violations": [
+     "A0 51.9 dB < 65 dB"
+    ]
+   }
+  ],
+  "corners_pass": null,
+  "power_frac": null
+ },
+ {
+  "spec": "S10",
+  "mode": "B",
+  "passed": false,
+  "iterations": 1,
+  "trace": [
+   {
+    "iter": 1,
+    "reply": "{\n  \"reasoning\": \"INFEASIBLE: To meet GBW >= 100 MHz with CL=5 pF requires gm1 >= 3.14 mS. With the maximum allowed tail current from the 100 \u00b5W power budget (Itail <= 15 \u00b5A) and the highest practical gm/Id (24 V\u207b\u00b9), the achievable gm1 is only 180 \u00b5S, giving GBW \u2248 5.7 MHz, far below 100 MHz. Even increasing gm/Id beyond the allowed range cannot satisfy both the GBW and power constraints, so the specifications cannot be met with this 5\u2011transistor OTA topology in GF180MCU.\",\n  \"gmid1\": null,\n  \"L1_um\": null,\n  \"gmid3\": null,\n  \"L3_um\": null,\n  \"gmid5\": null,\n  \"L5_um\": null,\n  \"Itail_uA\": null\n}",
+    "violations": [
+     "invalid proposal: 'Itail_uA' is missing or null - every field needs a number"
+    ]
+   }
+  ],
+  "corners_pass": null,
+  "power_frac": null
+ },
+ {
+  "spec": "S1",
+  "mode": "C",
+  "passed": true,
+  "iterations": 2,
+  "trace": [
+   {
+    "iter": 1,
+    "reply": "{\n  \"reasoning\": \"INFEASIBLE: none \u2013 chosen sizing meets GBW\u224810\u202fMHz, gain\u224842\u202fdB, PM\u224866\u00b0, power\u2248198\u202f\u00b5W, swing>1.5\u202fV with CL=2\u202fpF.\",\n  \"gmid1\": 10.0,\n  \"L1_um\": 1.0,\n  \"gmid3\": 24.0,\n  \"L3_um\": 1.0,\n  \"gmid5\": 10.0,\n  \"L5_um\": 0.5,\n  \"Itail_uA\": 30.0\n}",
+    "violations": [
+     "invalid proposal: W3=6.96e+03 um outside 0.22..2000 um"
+    ]
+   },
+   {
+    "iter": 2,
+    "reply": "{\n  \"reasoning\": \"Adjusted PMOS to gm/Id=15 (higher gm for faster mirror pole) while keeping lengths \u22642\u202f\u00b5m and widths <2000\u202f\u00b5m. NMOS pair at gm/Id=10, L=1\u202f\u00b5m gives gm\u2248150\u202f\u00b5S, GBW\u224812\u202fMHz. DC gain \u224848\u202fdB. Phase margin improves with mirror pole \u224818\u202fMHz > GBW, giving >60\u00b0. Power = 3.3\u202fV\u00b72\u00b730\u202f\u00b5A\u2248198\u202f\u00b5W. Output swing >1.5\u202fV. All device widths within 0.22\u20132000\u202f\u00b5m.\",\n  \"gmid1\": 10.0,\n  \"L1_um\": 1.0,\n  \"gmid3\": 15.0,\n  \"L3_um\": 1.0,\n  \"gmid5\": 10.0,\n  \"L5_um\": 0.5,\n  \"Itail_uA\": 30.0\n}",
+    "proposal": {
+     "reasoning": "Adjusted PMOS to gm/Id=15 (higher gm for faster mirror pole) while keeping lengths \u22642\u202f\u00b5m and widths <2000\u202f\u00b5m. NMOS pair at gm/Id=10, L=1\u202f\u00b5m gives gm\u2248150\u202f\u00b5S, GBW\u224812\u202fMHz. DC gain \u224848\u202fdB. Phase margin improves with mirror pole \u224818\u202fMHz > GBW, giving >60\u00b0. Power = 3.3\u202fV\u00b72\u00b730\u202f\u00b5A\u2248198\u202f\u00b5W. Output swing >1.5\u202fV. All device widths within 0.22\u20132000\u202f\u00b5m.",
+     "gmid1": 10.0,
+     "L1_um": 1.0,
+     "gmid3": 15.0,
+     "L3_um": 1.0,
+     "gmid5": 10.0,
+     "L5_um": 0.5,
+     "Itail_uA": 30.0
+    },
+    "sizing": {
+     "L1": 1e-06,
+     "L3": 1e-06,
+     "L5": 5e-07,
+     "W1": 6.64717171377075e-06,
+     "W3": 9.20159763094135e-05,
+     "W5": 6.847127658408633e-06,
+     "Itail": 2.9999999999999997e-05
+    },
+    "metrics": {
+     "ok": true,
+     "corner": "typical",
+     "A0_dB": 46.96531,
+     "GBW_Hz": 11125571.246207673,
+     "PM_deg": 83.79319762064581,
+     "power_W": 0.0001961817,
+     "Vout_dc": 1.653662,
+     "Vtail": 0.614352,
+     "SR_Vus": 14.999999999999998,
+     "sat_margin_V": {
+      "M1": 1.6617261,
+      "M2": 0.8601304999999999,
+      "M3": 0.75203398,
+      "M4": 1.55082808,
+      "M5": 0.4440457
+     },
+     "all_saturated": true,
+     "swing_V": 2.41095858
+    },
+    "violations": []
+   }
+  ],
+  "corners_pass": true,
+  "power_frac": 0.9809085
+ }
+]

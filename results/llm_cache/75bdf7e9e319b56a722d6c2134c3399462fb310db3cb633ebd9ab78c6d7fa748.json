@@ -1,0 +1,1 @@
+"{\"reasoning\":\"Increase tail current to raise gm1 and meet GBW while staying under power budget. New Itail=25 \u00b5A gives gm1\u22480.158\u202fmS \u2192 GBW\u224812.5\u202fMHz. Power=3.3\u202fV*2*25\u202f\u00b5A=165\u202f\u00b5W <200\u202f\u00b5W. Margins remain acceptable.\",\"gmid1\":12.6,\"L1_um\":0.5,\"gmid3\":6,\"L3_um\":2,\"gmid5\":8,\"L5_um\":0.5,\"Itail_uA\":25}"

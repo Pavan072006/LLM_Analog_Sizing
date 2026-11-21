@@ -1,0 +1,60 @@
+* NGSPICE file created from ota5t.ext - technology: gf180mcuD
+
+.subckt ota5t B VSS IBIAS VN VP VDD OUT
+X0 a_n2175_3456# a_n2175_3456# VDD VDD pfet_03v3 ad=3.492p pd=12.84u as=3.492p ps=12.84u w=5.82u l=2u
+X1 IBIAS IBIAS VSS B nfet_03v3 ad=2.07p pd=8.1u as=2.07p ps=8.1u w=3.45u l=0.5u
+X2 B B B B nfet_03v3 ad=2.001p pd=8.06u as=14.1752p ps=62.8u w=3.45u l=0.5u
+X3 a_n2175_3456# VP a_n638_572# B nfet_03v3 ad=0.3724p pd=1.89u as=0.798p ps=3.86u w=1.33u l=0.5u
+X4 B B B B nfet_03v3 ad=0.7714p pd=3.82u as=0 ps=0 w=1.33u l=0.5u
+X5 a_n638_572# VN OUT B nfet_03v3 ad=0.798p pd=3.86u as=0.3724p ps=1.89u w=1.33u l=0.5u
+X6 B B B B nfet_03v3 ad=0.7714p pd=3.82u as=0 ps=0 w=1.33u l=0.5u
+X7 VDD VDD VDD VDD pfet_03v3 ad=3.3756p pd=12.8u as=34.4544p ps=0.12824m w=5.82u l=2u
+X8 B B B B nfet_03v3 ad=0.7714p pd=3.82u as=0 ps=0 w=1.33u l=0.5u
+X9 OUT a_n2175_3456# VDD VDD pfet_03v3 ad=3.492p pd=12.84u as=3.492p ps=12.84u w=5.82u l=2u
+X10 B B B B nfet_03v3 ad=2.001p pd=8.06u as=0 ps=0 w=3.45u l=0.5u
+X11 OUT a_n2175_3456# VDD VDD pfet_03v3 ad=3.492p pd=12.84u as=3.492p ps=12.84u w=5.82u l=2u
+X12 a_n2175_3456# VP a_n638_572# B nfet_03v3 ad=0.3724p pd=1.89u as=0.798p ps=3.86u w=1.33u l=0.5u
+X13 a_n638_572# VP a_n2175_3456# B nfet_03v3 ad=0.798p pd=3.86u as=0.3724p ps=1.89u w=1.33u l=0.5u
+X14 OUT VN a_n638_572# B nfet_03v3 ad=0.3724p pd=1.89u as=0.798p ps=3.86u w=1.33u l=0.5u
+X15 OUT VN a_n638_572# B nfet_03v3 ad=0.3724p pd=1.89u as=0.798p ps=3.86u w=1.33u l=0.5u
+X16 OUT a_n2175_3456# VDD VDD pfet_03v3 ad=3.492p pd=12.84u as=3.492p ps=12.84u w=5.82u l=2u
+X17 B B B B nfet_03v3 ad=0.7714p pd=3.82u as=0 ps=0 w=1.33u l=0.5u
+X18 a_n638_572# VP a_n2175_3456# B nfet_03v3 ad=0.798p pd=3.86u as=0.3724p ps=1.89u w=1.33u l=0.5u
+X19 a_n2175_3456# a_n2175_3456# VDD VDD pfet_03v3 ad=3.492p pd=12.84u as=3.492p ps=12.84u w=5.82u l=2u
+X20 a_n638_572# IBIAS VSS B nfet_03v3 ad=2.07p pd=8.1u as=2.07p ps=8.1u w=3.45u l=0.5u
+X21 a_n638_572# VN OUT B nfet_03v3 ad=0.798p pd=3.86u as=0.3724p ps=1.89u w=1.33u l=0.5u
+X22 a_n2175_3456# a_n2175_3456# VDD VDD pfet_03v3 ad=3.492p pd=12.84u as=3.492p ps=12.84u w=5.82u l=2u
+X23 VDD VDD VDD VDD pfet_03v3 ad=3.3756p pd=12.8u as=0 ps=0 w=5.82u l=2u
+C0 IBIAS OUT 0
+C1 IBIAS a_n2175_3456# 0
+C2 VDD VP 0.04383f
+C3 VP OUT 0.26133f
+C4 VDD a_n638_572# 0.00154f
+C5 VN VSS 0
+C6 VP a_n2175_3456# 0.60842f
+C7 a_n638_572# OUT 1.58753f
+C8 a_n638_572# a_n2175_3456# 1.61568f
+C9 IBIAS VSS 1.27055f
+C10 VDD OUT 5.51581f
+C11 VDD a_n2175_3456# 15.267f
+C12 OUT a_n2175_3456# 2.01277f
+C13 VP VSS 0
+C14 VSS a_n638_572# 0.69617f
+C15 VP VN 1.60898f
+C16 VN a_n638_572# 0.43129f
+C17 IBIAS a_n638_572# 0.16205f
+C18 VSS OUT 0
+C19 VSS a_n2175_3456# 0
+C20 VDD VN 0.33196f
+C21 VN OUT 0.51893f
+C22 VN a_n2175_3456# 0.19291f
+C23 VP a_n638_572# 0.4396f
+C24 VSS B 1.14849f
+C25 IBIAS B 2.17533f
+C26 VN B 2.87864f
+C27 VP B 3.07329f
+C28 OUT B 2.17315f
+C29 VDD B 61.1531f
+C30 a_n638_572# B 4.57689f ; **FLOATING
+C31 a_n2175_3456# B 2.51004f ; **FLOATING
+.ends

@@ -1,0 +1,1 @@
+"{\n  \"reasoning\": \"INVERSION: choose moderate inversion gm/Id=10 for all devices. With L=2\u202f\u00b5m the high gm/gds ratios give low output conductance, yielding >52\u202fdB gain. gm1 = 2\u03c0\u00b715\u202fMHz\u00b72\u202fpF \u2248 190\u202f\u00b5S, so Id per input transistor = gm1/10 \u2248 19"

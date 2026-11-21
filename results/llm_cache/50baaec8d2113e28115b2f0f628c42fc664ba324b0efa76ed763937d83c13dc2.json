@@ -1,0 +1,1 @@
+"{\"reasoning\":\"INFEASIBLE: initial sizing meets GBW and gain but mirror pole (~5\u202fMHz) limits phase margin below 60\u00b0, and output swing may be insufficient with chosen Vov. Further iteration needed.\",\"gmid1\":12.6,\"L1_um\":0.5,\"gmid3\":6,\"L3_um\":2,\"gmid5\":8,\"L5_um\":0.5,\"Itail_uA\":20}"

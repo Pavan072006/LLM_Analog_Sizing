@@ -1,0 +1,110 @@
+[
+ {
+  "spec": "S1",
+  "mode": "A",
+  "passed": true,
+  "iterations": 1,
+  "trace": [
+   {
+    "iter": 1,
+    "reply": "{\n  \"reasoning\": \"Target GBW = 10 MHz with CL = 2 pF requires gm1 >= 126 uS. Choose Itail = 25 uA (total current = 50 uA, power = 165 uW <= 200 uW). With I1 = 12.5 uA, to achieve gm1 ~ 150 uS, sizing W1/L1 = 15/0.5 gives moderate inversion. For M3/M4, choosing L3 = 0.6 um ensures good Rout for A0 >= 40 dB while keeping mirror pole sufficiently high for PM >= 60 deg with W3 = 8 um. M5 is sized at W5/L5 = 10/0.8 for low Vdsat to maximize output swing and keep tail in saturation at Vicm = 1.65 V.\",\n  \"W1_um\": 15.0,\n  \"L1_um\": 0.5,\n  \"W3_um\": 8.0,\n  \"L3_um\": 0.6,\n  \"W5_um\": 10.0,\n  \"L5_um\": 0.8,\n  \"Itail_uA\": 25.0\n}",
+    "proposal": {
+     "reasoning": "Target GBW = 10 MHz with CL = 2 pF requires gm1 >= 126 uS. Choose Itail = 25 uA (total current = 50 uA, power = 165 uW <= 200 uW). With I1 = 12.5 uA, to achieve gm1 ~ 150 uS, sizing W1/L1 = 15/0.5 gives moderate inversion. For M3/M4, choosing L3 = 0.6 um ensures good Rout for A0 >= 40 dB while keeping mirror pole sufficiently high for PM >= 60 deg with W3 = 8 um. M5 is sized at W5/L5 = 10/0.8 for low Vdsat to maximize output swing and keep tail in saturation at Vicm = 1.65 V.",
+     "W1_um": 15.0,
+     "L1_um": 0.5,
+     "W3_um": 8.0,
+     "L3_um": 0.6,
+     "W5_um": 10.0,
+     "L5_um": 0.8,
+     "Itail_uA": 25.0
+    },
+    "sizing": {
+     "W1": 1.4999999999999999e-05,
+     "L1": 5e-07,
+     "W3": 8e-06,
+     "L3": 6e-07,
+     "W5": 9.999999999999999e-06,
+     "L5": 8e-07,
+     "Itail": 2.4999999999999998e-05
+    },
+    "metrics": {
+     "ok": true,
+     "corner": "typical",
+     "A0_dB": 42.162147,
+     "GBW_Hz": 16400240.156671349,
+     "PM_deg": 88.61427949473352,
+     "power_W": 0.00016464194999999998,
+     "Vout_dc": 1.655028,
+     "Vtail": 0.7193833,
+     "SR_Vus": 12.5,
+     "sat_margin_V": {
+      "M1": 1.4890950900000002,
+      "M2": 0.83988393,
+      "M3": 0.7935026000000001,
+      "M4": 1.4405489,
+      "M5": 0.5552877999999999
+     },
+     "all_saturated": true,
+     "swing_V": 2.2804330299999998
+    },
+    "violations": []
+   }
+  ],
+  "corners_pass": true,
+  "power_frac": 0.8232097499999999
+ },
+ {
+  "spec": "S2",
+  "mode": "A",
+  "passed": true,
+  "iterations": 1,
+  "trace": [
+   {
+    "iter": 1,
+    "reply": "{\n  \"reasoning\": \"GBW >= 20 MHz with CL = 2 pF requires gm1 >= 251 uS. Total power <= 400 uW implies total current <= 121 uA, so Itail <= 60 uA. Setting Itail = 50 uA (power = 330 uW, SR = 25 V/us). With I1 = 25 uA, to achieve gm1 ~ 300 uS, set W1/L1 = 20/0.5. For DC gain >= 40 dB (gm*ro >= 100), choose L ~ 0.5 - 0.7 um. To keep the mirror pole well above GBW (for PM >= 60 deg), keep W3/L3 compact: W3/L3 = 10/0.5 um gives gm3 ~ 180 uS and low mirror capacitance Cx. M5 sized at 15/0.7 um to maintain saturation with low Vdsat (~0.2 V) and high output impedance.\",\n  \"W1_um\": 20.0,\n  \"L1_um\": 0.5,\n  \"W3_um\": 10.0,\n  \"L3_um\": 0.5,\n  \"W5_um\": 15.0,\n  \"L5_um\": 0.7,\n  \"Itail_uA\": 50.0\n}",
+    "proposal": {
+     "reasoning": "GBW >= 20 MHz with CL = 2 pF requires gm1 >= 251 uS. Total power <= 400 uW implies total current <= 121 uA, so Itail <= 60 uA. Setting Itail = 50 uA (power = 330 uW, SR = 25 V/us). With I1 = 25 uA, to achieve gm1 ~ 300 uS, set W1/L1 = 20/0.5. For DC gain >= 40 dB (gm*ro >= 100), choose L ~ 0.5 - 0.7 um. To keep the mirror pole well above GBW (for PM >= 60 deg), keep W3/L3 compact: W3/L3 = 10/0.5 um gives gm3 ~ 180 uS and low mirror capacitance Cx. M5 sized at 15/0.7 um to maintain saturation with low Vdsat (~0.2 V) and high output impedance.",
+     "W1_um": 20.0,
+     "L1_um": 0.5,
+     "W3_um": 10.0,
+     "L3_um": 0.5,
+     "W5_um": 15.0,
+     "L5_um": 0.7,
+     "Itail_uA": 50.0
+    },
+    "sizing": {
+     "W1": 1.9999999999999998e-05,
+     "L1": 5e-07,
+     "W3": 9.999999999999999e-06,
+     "L3": 5e-07,
+     "W5": 1.4999999999999999e-05,
+     "L5": 7e-07,
+     "Itail": 4.9999999999999996e-05
+    },
+    "metrics": {
+     "ok": true,
+     "corner": "typical",
+     "A0_dB": 41.388376,
+     "GBW_Hz": 29579233.6809819,
+     "PM_deg": 88.27959705400708,
+     "power_W": 0.00032893113,
+     "Vout_dc": 1.655273,
+     "Vtail": 0.6994536,
+     "SR_Vus": 25.0,
+     "sat_margin_V": {
+      "M1": 1.468953,
+      "M2": 0.8463683,
+      "M3": 0.7913069,
+      "M4": 1.4109829,
+      "M5": 0.5244432
+     },
+     "all_saturated": true,
+     "swing_V": 2.257351
+    },
+    "violations": []
+   }
+  ],
+  "corners_pass": true,
+  "power_frac": 0.8223278249999999
+ }
+]

@@ -1,0 +1,1 @@
+"{\"reasoning\":\"INFEASIBLE: Even with maximum device lengths (L=2\u00b5m) and low gm/Id, the achievable DC gain (~52\u202fdB) is below the required 65\u202fdB, so the specs cannot be met with this topology. Providing a best\u2011effort sizing nonetheless.\",\"gmid1\":10,\"L1_um\":2,\"gmid3\":10,\"L3_um\":2,\"gmid5\":10,\"L5_um\":2,\"Itail_uA\":100}"

@@ -1,0 +1,12 @@
+* 5T OTA reference netlist (from sizing)
+.subckt ota5t VP VN OUT IBIAS VDD VSS B
+XM1 X VP TAIL B nfet_03v3 w=204.880u l=0.53u
+XM2 OUT VN TAIL B nfet_03v3 w=204.880u l=0.53u
+XM3 X X VDD VDD pfet_03v3 w=2.990u l=0.34u
+XM4 OUT X VDD VDD pfet_03v3 w=2.990u l=0.34u
+XM5 TAIL IBIAS VSS B nfet_03v3 w=8.460u l=0.68u
+XM6 IBIAS IBIAS VSS B nfet_03v3 w=8.460u l=0.68u
+XD1 B B B B nfet_03v3 w=31.520u l=0.53u
+XD2 B B B B nfet_03v3 w=8.460u l=0.68u
+XD3 VDD VDD VDD VDD pfet_03v3 w=5.980u l=0.34u
+.ends ota5t

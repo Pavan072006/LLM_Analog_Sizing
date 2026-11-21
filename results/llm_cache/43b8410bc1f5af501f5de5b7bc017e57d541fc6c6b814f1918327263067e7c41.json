@@ -1,0 +1,1 @@
+"{\"reasoning\":\"Increase Itail to raise gm1 for GBW. With gm/Id=10, gm1=5*Itail, need gm1\u22480.4mS \u2192 Itail\u224880\u00b5A gives GBW\u224863MHz (>50). Power=3.3V*2*80\u00b5A=528\u00b5W (<1mW). Gain remains >35dB.\",\"gmid1\":10,\"L1_um\":0.5,\"gmid3\":10,\"L3_um\":2,\"gmid5\":10,\"L5_um\":0.5,\"Itail_uA\":80}"

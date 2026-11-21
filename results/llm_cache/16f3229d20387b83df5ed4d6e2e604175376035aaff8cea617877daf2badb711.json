@@ -1,0 +1,1 @@
+"{\"reasoning\":\"INFEASIBLE: Required output resistance (low \u03bb) demands channel length >2\u202f\u00b5m to achieve \u226565\u202fdB gain, exceeding the process limit. Best achievable gain with L=2\u202f\u00b5m is ~51\u202fdB, below spec.\",\"W1_um\":120,\"L1_um\":2,\"W3_um\":240,\"L3_um\":2,\"W5_um\":80,\"L5_um\":2,\"Itail_uA\":75}"

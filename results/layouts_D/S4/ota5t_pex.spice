@@ -1,0 +1,82 @@
+* NGSPICE file created from ota5t.ext - technology: gf180mcuD
+
+.subckt ota5t B VSS IBIAS VN VP VDD OUT
+X0 OUT VN a_n2070_n374# B nfet_03v3 ad=2.0972p pd=8.05u as=2.0972p ps=8.05u w=7.49u l=0.6u
+X1 a_n2070_n374# VN OUT B nfet_03v3 ad=2.0972p pd=8.05u as=2.0972p ps=8.05u w=7.49u l=0.6u
+X2 a_n1830_1924# VP a_n2070_n374# B nfet_03v3 ad=2.0972p pd=8.05u as=2.0972p ps=8.05u w=7.49u l=0.6u
+X3 a_n1830_1924# a_n1830_1924# VDD VDD pfet_03v3 ad=2.97p pd=11.1u as=2.97p ps=11.1u w=4.95u l=1.11u
+X4 OUT a_n1830_1924# VDD VDD pfet_03v3 ad=2.97p pd=11.1u as=2.97p ps=11.1u w=4.95u l=1.11u
+X5 a_n2070_n374# VP a_n1830_1924# B nfet_03v3 ad=2.0972p pd=8.05u as=2.0972p ps=8.05u w=7.49u l=0.6u
+X6 OUT VN a_n2070_n374# B nfet_03v3 ad=2.0972p pd=8.05u as=2.0972p ps=8.05u w=7.49u l=0.6u
+X7 a_n1830_1924# VP a_n2070_n374# B nfet_03v3 ad=2.0972p pd=8.05u as=2.0972p ps=8.05u w=7.49u l=0.6u
+X8 B B B B nfet_03v3 ad=4.3442p pd=16.14u as=49.416p ps=0.18432m w=7.49u l=0.6u
+X9 OUT VN a_n2070_n374# B nfet_03v3 ad=2.0972p pd=8.05u as=2.0972p ps=8.05u w=7.49u l=0.6u
+X10 a_n2070_n374# VN OUT B nfet_03v3 ad=2.0972p pd=8.05u as=2.0972p ps=8.05u w=7.49u l=0.6u
+X11 a_n2070_n374# VP a_n1830_1924# B nfet_03v3 ad=2.0972p pd=8.05u as=2.0972p ps=8.05u w=7.49u l=0.6u
+X12 IBIAS IBIAS VSS B nfet_03v3 ad=3.792p pd=13.84u as=3.792p ps=13.84u w=6.32u l=1.21u
+X13 a_n1830_1924# VP a_n2070_n374# B nfet_03v3 ad=2.0972p pd=8.05u as=2.0972p ps=8.05u w=7.49u l=0.6u
+X14 a_n2070_n374# VN OUT B nfet_03v3 ad=4.494p pd=16.18u as=2.0972p ps=8.05u w=7.49u l=0.6u
+X15 B B B B nfet_03v3 ad=4.3442p pd=16.14u as=0 ps=0 w=7.49u l=0.6u
+X16 a_n1830_1924# VP a_n2070_n374# B nfet_03v3 ad=2.0972p pd=8.05u as=2.0972p ps=8.05u w=7.49u l=0.6u
+X17 a_n2070_n374# VP a_n1830_1924# B nfet_03v3 ad=2.0972p pd=8.05u as=2.0972p ps=8.05u w=7.49u l=0.6u
+X18 a_n2070_n374# VP a_n1830_1924# B nfet_03v3 ad=2.0972p pd=8.05u as=2.0972p ps=8.05u w=7.49u l=0.6u
+X19 a_n2070_n374# IBIAS VSS B nfet_03v3 ad=3.792p pd=13.84u as=3.792p ps=13.84u w=6.32u l=1.21u
+X20 VDD VDD VDD VDD pfet_03v3 ad=2.871p pd=11.06u as=23.364p ps=88.64u w=4.95u l=1.11u
+X21 OUT VN a_n2070_n374# B nfet_03v3 ad=2.0972p pd=8.05u as=2.0972p ps=8.05u w=7.49u l=0.6u
+X22 OUT a_n1830_1924# VDD VDD pfet_03v3 ad=2.97p pd=11.1u as=2.97p ps=11.1u w=4.95u l=1.11u
+X23 a_n1830_1924# VP a_n2070_n374# B nfet_03v3 ad=2.0972p pd=8.05u as=4.494p ps=16.18u w=7.49u l=0.6u
+X24 a_n2070_n374# VP a_n1830_1924# B nfet_03v3 ad=4.494p pd=16.18u as=2.0972p ps=8.05u w=7.49u l=0.6u
+X25 a_n2070_n374# VN OUT B nfet_03v3 ad=2.0972p pd=8.05u as=2.0972p ps=8.05u w=7.49u l=0.6u
+X26 B B B B nfet_03v3 ad=3.6656p pd=13.8u as=0 ps=0 w=6.32u l=1.21u
+X27 a_n1830_1924# VP a_n2070_n374# B nfet_03v3 ad=2.0972p pd=8.05u as=2.0972p ps=8.05u w=7.49u l=0.6u
+X28 a_n2070_n374# VN OUT B nfet_03v3 ad=2.0972p pd=8.05u as=2.0972p ps=8.05u w=7.49u l=0.6u
+X29 OUT VN a_n2070_n374# B nfet_03v3 ad=2.0972p pd=8.05u as=4.494p ps=16.18u w=7.49u l=0.6u
+X30 OUT VN a_n2070_n374# B nfet_03v3 ad=2.0972p pd=8.05u as=4.494p ps=16.18u w=7.49u l=0.6u
+X31 OUT VN a_n2070_n374# B nfet_03v3 ad=2.0972p pd=8.05u as=2.0972p ps=8.05u w=7.49u l=0.6u
+X32 a_n2070_n374# VN OUT B nfet_03v3 ad=2.0972p pd=8.05u as=2.0972p ps=8.05u w=7.49u l=0.6u
+X33 a_n1830_1924# VP a_n2070_n374# B nfet_03v3 ad=2.0972p pd=8.05u as=4.494p ps=16.18u w=7.49u l=0.6u
+X34 a_n1830_1924# a_n1830_1924# VDD VDD pfet_03v3 ad=2.97p pd=11.1u as=2.97p ps=11.1u w=4.95u l=1.11u
+X35 VDD VDD VDD VDD pfet_03v3 ad=2.871p pd=11.06u as=0 ps=0 w=4.95u l=1.11u
+X36 B B B B nfet_03v3 ad=4.3442p pd=16.14u as=0 ps=0 w=7.49u l=0.6u
+X37 a_n2070_n374# VP a_n1830_1924# B nfet_03v3 ad=2.0972p pd=8.05u as=2.0972p ps=8.05u w=7.49u l=0.6u
+X38 a_n2070_n374# VP a_n1830_1924# B nfet_03v3 ad=4.494p pd=16.18u as=2.0972p ps=8.05u w=7.49u l=0.6u
+X39 a_n2070_n374# VN OUT B nfet_03v3 ad=2.0972p pd=8.05u as=2.0972p ps=8.05u w=7.49u l=0.6u
+X40 B B B B nfet_03v3 ad=4.3442p pd=16.14u as=0 ps=0 w=7.49u l=0.6u
+X41 OUT VN a_n2070_n374# B nfet_03v3 ad=2.0972p pd=8.05u as=2.0972p ps=8.05u w=7.49u l=0.6u
+X42 B B B B nfet_03v3 ad=3.6656p pd=13.8u as=0 ps=0 w=6.32u l=1.21u
+X43 a_n1830_1924# VP a_n2070_n374# B nfet_03v3 ad=2.0972p pd=8.05u as=2.0972p ps=8.05u w=7.49u l=0.6u
+X44 a_n2070_n374# VN OUT B nfet_03v3 ad=4.494p pd=16.18u as=2.0972p ps=8.05u w=7.49u l=0.6u
+X45 a_n2070_n374# VP a_n1830_1924# B nfet_03v3 ad=2.0972p pd=8.05u as=2.0972p ps=8.05u w=7.49u l=0.6u
+C0 VP VN 3.06736f
+C1 VN a_n2070_n374# 3.41147f
+C2 IBIAS a_n2070_n374# 0.35684f
+C3 VSS OUT 0.00112f
+C4 VSS a_n1830_1924# 0
+C5 VDD VN 0.36636f
+C6 VN OUT 3.69123f
+C7 VN a_n1830_1924# 0.20204f
+C8 VP a_n2070_n374# 3.41989f
+C9 IBIAS OUT 0
+C10 IBIAS a_n1830_1924# 0.00108f
+C11 VDD VP 0.02796f
+C12 VP OUT 0.36488f
+C13 VDD a_n2070_n374# 0
+C14 VN VSS 0
+C15 VP a_n1830_1924# 3.86355f
+C16 a_n2070_n374# OUT 10.3886f
+C17 a_n2070_n374# a_n1830_1924# 10.4145f
+C18 IBIAS VSS 1.76959f
+C19 VDD OUT 3.5953f
+C20 VDD a_n1830_1924# 8.1626f
+C21 OUT a_n1830_1924# 1.57674f
+C22 VP VSS 0
+C23 VSS a_n2070_n374# 0.65029f
+C24 VSS B 1.44825f
+C25 IBIAS B 3.08127f
+C26 VN B 7.88473f
+C27 VP B 8.04103f
+C28 OUT B 4.62878f
+C29 VDD B 35.4887f
+C30 a_n2070_n374# B 10.0405f ; **FLOATING
+C31 a_n1830_1924# B 4.83371f ; **FLOATING
+.ends

@@ -1,0 +1,31 @@
+* NGSPICE file created from ota5t.ext - technology: gf180mcuD
+
+.subckt ota5t B VSS IBIAS VN VP VDD OUT
+X0 a_n1575_3788# a_n1575_3788# VDD VDD pfet_03v3 ad=4.776p pd=17.12u as=4.776p ps=17.12u w=7.96u l=1u
+X1 a_n1575_3788# VP a_n638_664# B nfet_03v3 ad=0.5404p pd=2.49u as=1.158p ps=5.06u w=1.93u l=0.5u
+X2 OUT VN a_n638_664# B nfet_03v3 ad=0.5404p pd=2.49u as=1.158p ps=5.06u w=1.93u l=0.5u
+X3 IBIAS IBIAS VSS B nfet_03v3 ad=3.348p pd=12.36u as=3.348p ps=12.36u w=5.58u l=1u
+X4 OUT a_n1575_3788# VDD VDD pfet_03v3 ad=4.776p pd=17.12u as=4.776p ps=17.12u w=7.96u l=1u
+X5 a_n1575_3788# VP a_n638_664# B nfet_03v3 ad=0.5404p pd=2.49u as=1.158p ps=5.06u w=1.93u l=0.5u
+X6 a_n638_664# IBIAS VSS B nfet_03v3 ad=3.348p pd=12.36u as=3.348p ps=12.36u w=5.58u l=1u
+X7 B B B B nfet_03v3 ad=1.1194p pd=5.02u as=21.9008p ps=89.44u w=1.93u l=0.5u
+X8 a_n638_664# VN OUT B nfet_03v3 ad=1.158p pd=5.06u as=0.5404p ps=2.49u w=1.93u l=0.5u
+X9 B B B B nfet_03v3 ad=1.1194p pd=5.02u as=0 ps=0 w=1.93u l=0.5u
+X10 B B B B nfet_03v3 ad=1.1194p pd=5.02u as=0 ps=0 w=1.93u l=0.5u
+X11 B B B B nfet_03v3 ad=3.2364p pd=12.32u as=0 ps=0 w=5.58u l=1u
+X12 a_n638_664# VP a_n1575_3788# B nfet_03v3 ad=1.158p pd=5.06u as=0.5404p ps=2.49u w=1.93u l=0.5u
+X13 a_n638_664# VP a_n1575_3788# B nfet_03v3 ad=1.158p pd=5.06u as=0.5404p ps=2.49u w=1.93u l=0.5u
+X14 VDD VDD VDD VDD pfet_03v3 ad=4.6168p pd=17.08u as=47.1232p ps=0.17104m w=7.96u l=1u
+X15 OUT VN a_n638_664# B nfet_03v3 ad=0.5404p pd=2.49u as=1.158p ps=5.06u w=1.93u l=0.5u
+X16 a_n1575_3788# a_n1575_3788# VDD VDD pfet_03v3 ad=4.776p pd=17.12u as=4.776p ps=17.12u w=7.96u l=1u
+X17 a_n638_664# VN OUT B nfet_03v3 ad=1.158p pd=5.06u as=0.5404p ps=2.49u w=1.93u l=0.5u
+X18 VDD VDD VDD VDD pfet_03v3 ad=4.6168p pd=17.08u as=0 ps=0 w=7.96u l=1u
+X19 OUT a_n1575_3788# VDD VDD pfet_03v3 ad=4.776p pd=17.12u as=4.776p ps=17.12u w=7.96u l=1u
+X20 B B B B nfet_03v3 ad=3.2364p pd=12.32u as=0 ps=0 w=5.58u l=1u
+X21 a_n638_664# IBIAS VSS B nfet_03v3 ad=3.348p pd=12.36u as=3.348p ps=12.36u w=5.58u l=1u
+X22 OUT a_n1575_3788# VDD VDD pfet_03v3 ad=4.776p pd=17.12u as=4.776p ps=17.12u w=7.96u l=1u
+X23 a_n1575_3788# a_n1575_3788# VDD VDD pfet_03v3 ad=4.776p pd=17.12u as=4.776p ps=17.12u w=7.96u l=1u
+X24 IBIAS IBIAS VSS B nfet_03v3 ad=3.348p pd=12.36u as=3.348p ps=12.36u w=5.58u l=1u
+X25 B B B B nfet_03v3 ad=1.1194p pd=5.02u as=0 ps=0 w=1.93u l=0.5u
+.ends
+

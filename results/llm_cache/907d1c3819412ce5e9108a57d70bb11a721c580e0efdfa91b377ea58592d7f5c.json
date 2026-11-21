@@ -1,0 +1,1 @@
+"{\"reasoning\":\"Increase Itail to raise gm1 and meet GBW. With gm/Id=10, Id per input device = Itail/2 = 50\u00b5A \u2192 gm1=0.5mS giving GBW\u224879MHz (>50). Power=3.3V*2*100\u00b5A=660\u00b5W (<1mW). Keep same L choices for gain and pole.\",\"gmid1\":10,\"L1_um\":0.5,\"gmid3\":10,\"L3_um\":2,\"gmid5\":10,\"L5_um\":0.5,\"Itail_uA\":100}"

@@ -1,0 +1,1 @@
+"{\"reasoning\":\"Calculated gm for GBW, sized NMOS pair for Itail limit, chose longer L for tail and load to improve ro, met power and swing constraints\",\"W1_um\":5.6,\"L1_um\":1.0,\"W3_um\":14.0,\"L3_um\":1.0,\"W5_um\":50.0,\"L5_um\":2.0,\"Itail_uA\":227}"

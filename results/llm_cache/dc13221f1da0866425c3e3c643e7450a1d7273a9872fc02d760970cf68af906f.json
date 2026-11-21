@@ -1,0 +1,1 @@
+"{\"reasoning\":\"Meets GBW with gm1\u22480.188mS (gmid1=5, Itail=75\u00b5A). Gain\u2248242 (\u224848dB) using L=1\u00b5m (gm/gds\u2248387 for NMOS, 650 for PMOS). Power=3.3V*2*75\u00b5A\u2248495\u00b5W<500\u00b5W. Output swing >2V. Mirror pole \u224812MHz gives PM\u2248\u224860\u00b0.\",\"gmid1\":5,\"L1_um\":1,\"gmid3\":4,\"L3_um\":1,\"gmid5\":5,\"L5_um\":1,\"Itail_uA\":75}"

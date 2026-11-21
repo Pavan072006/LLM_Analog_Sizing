@@ -1,0 +1,1 @@
+"{\"reasoning\":\"Increase tail current to raise gm and meet GBW. With gm/Id=10, L=1\u00b5m, Itail=120\u00b5A gives gm1=10*60\u00b5A=0.6mS \u2192 GBW\u224848MHz (>40). Power=3.3V*2*120\u00b5A=0.792mW (<1.5mW). Gain and swing remain adequate.\",\"gmid1\":10,\"L1_um\":1,\"gmid3\":10,\"L3_um\":1,\"gmid5\":10,\"L5_um\":1,\"Itail_uA\":120}"

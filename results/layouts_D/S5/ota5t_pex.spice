@@ -1,0 +1,104 @@
+* NGSPICE file created from ota5t.ext - technology: gf180mcuD
+
+.subckt ota5t B VSS IBIAS VN VP VDD OUT
+X0 a_n2822_1714# VP a_n3048_n658# B nfet_03v3 ad=2.2064p pd=8.44u as=2.2064p ps=8.44u w=7.88u l=0.53u
+X1 a_n3048_n658# VN OUT B nfet_03v3 ad=2.2064p pd=8.44u as=2.2064p ps=8.44u w=7.88u l=0.53u
+X2 a_n3048_n658# IBIAS VSS B nfet_03v3 ad=2.538p pd=9.66u as=2.538p ps=9.66u w=4.23u l=0.68u
+X3 a_n3048_n658# VP a_n2822_1714# B nfet_03v3 ad=2.2064p pd=8.44u as=2.2064p ps=8.44u w=7.88u l=0.53u
+X4 a_n3048_n658# VP a_n2822_1714# B nfet_03v3 ad=2.2064p pd=8.44u as=2.2064p ps=8.44u w=7.88u l=0.53u
+X5 a_n2822_1714# VP a_n3048_n658# B nfet_03v3 ad=4.728p pd=16.96u as=2.2064p ps=8.44u w=7.88u l=0.53u
+X6 a_n2822_1714# VP a_n3048_n658# B nfet_03v3 ad=2.2064p pd=8.44u as=2.2064p ps=8.44u w=7.88u l=0.53u
+X7 a_n2822_1714# VP a_n3048_n658# B nfet_03v3 ad=4.728p pd=16.96u as=2.2064p ps=8.44u w=7.88u l=0.53u
+X8 a_n2822_1714# VP a_n3048_n658# B nfet_03v3 ad=2.2064p pd=8.44u as=2.2064p ps=8.44u w=7.88u l=0.53u
+X9 a_n3048_n658# VP a_n2822_1714# B nfet_03v3 ad=2.2064p pd=8.44u as=2.2064p ps=8.44u w=7.88u l=0.53u
+X10 a_n3048_n658# VP a_n2822_1714# B nfet_03v3 ad=2.2064p pd=8.44u as=2.2064p ps=8.44u w=7.88u l=0.53u
+X11 a_n3048_n658# VN OUT B nfet_03v3 ad=2.2064p pd=8.44u as=2.2064p ps=8.44u w=7.88u l=0.53u
+X12 OUT VN a_n3048_n658# B nfet_03v3 ad=2.2064p pd=8.44u as=2.2064p ps=8.44u w=7.88u l=0.53u
+X13 OUT VN a_n3048_n658# B nfet_03v3 ad=2.2064p pd=8.44u as=2.2064p ps=8.44u w=7.88u l=0.53u
+X14 a_n3048_n658# VP a_n2822_1714# B nfet_03v3 ad=2.2064p pd=8.44u as=2.2064p ps=8.44u w=7.88u l=0.53u
+X15 OUT VN a_n3048_n658# B nfet_03v3 ad=2.2064p pd=8.44u as=2.2064p ps=8.44u w=7.88u l=0.53u
+X16 OUT VN a_n3048_n658# B nfet_03v3 ad=2.2064p pd=8.44u as=2.2064p ps=8.44u w=7.88u l=0.53u
+X17 a_n3048_n658# VN OUT B nfet_03v3 ad=2.2064p pd=8.44u as=2.2064p ps=8.44u w=7.88u l=0.53u
+X18 OUT VN a_n3048_n658# B nfet_03v3 ad=2.2064p pd=8.44u as=2.2064p ps=8.44u w=7.88u l=0.53u
+X19 OUT VN a_n3048_n658# B nfet_03v3 ad=4.728p pd=16.96u as=2.2064p ps=8.44u w=7.88u l=0.53u
+X20 a_n2822_1714# VP a_n3048_n658# B nfet_03v3 ad=2.2064p pd=8.44u as=4.728p ps=16.96u w=7.88u l=0.53u
+X21 a_n3048_n658# VN OUT B nfet_03v3 ad=2.2064p pd=8.44u as=2.2064p ps=8.44u w=7.88u l=0.53u
+X22 OUT a_n2822_1714# VDD VDD pfet_03v3 ad=1.794p pd=7.18u as=1.794p ps=7.18u w=2.99u l=0.34u
+X23 B B B B nfet_03v3 ad=4.5704p pd=16.92u as=46.3768p ps=0.17384m w=7.88u l=0.53u
+X24 a_n3048_n658# VP a_n2822_1714# B nfet_03v3 ad=2.2064p pd=8.44u as=2.2064p ps=8.44u w=7.88u l=0.53u
+X25 OUT VN a_n3048_n658# B nfet_03v3 ad=2.2064p pd=8.44u as=2.2064p ps=8.44u w=7.88u l=0.53u
+X26 OUT VN a_n3048_n658# B nfet_03v3 ad=2.2064p pd=8.44u as=4.728p ps=16.96u w=7.88u l=0.53u
+X27 a_n3048_n658# VN OUT B nfet_03v3 ad=2.2064p pd=8.44u as=2.2064p ps=8.44u w=7.88u l=0.53u
+X28 OUT VN a_n3048_n658# B nfet_03v3 ad=2.2064p pd=8.44u as=2.2064p ps=8.44u w=7.88u l=0.53u
+X29 IBIAS IBIAS VSS B nfet_03v3 ad=2.538p pd=9.66u as=2.538p ps=9.66u w=4.23u l=0.68u
+X30 a_n3048_n658# VN OUT B nfet_03v3 ad=2.2064p pd=8.44u as=2.2064p ps=8.44u w=7.88u l=0.53u
+X31 a_n2822_1714# VP a_n3048_n658# B nfet_03v3 ad=2.2064p pd=8.44u as=2.2064p ps=8.44u w=7.88u l=0.53u
+X32 a_n2822_1714# VP a_n3048_n658# B nfet_03v3 ad=2.2064p pd=8.44u as=2.2064p ps=8.44u w=7.88u l=0.53u
+X33 a_n3048_n658# VP a_n2822_1714# B nfet_03v3 ad=2.2064p pd=8.44u as=2.2064p ps=8.44u w=7.88u l=0.53u
+X34 a_n3048_n658# VP a_n2822_1714# B nfet_03v3 ad=2.2064p pd=8.44u as=2.2064p ps=8.44u w=7.88u l=0.53u
+X35 OUT VN a_n3048_n658# B nfet_03v3 ad=2.2064p pd=8.44u as=4.728p ps=16.96u w=7.88u l=0.53u
+X36 a_n2822_1714# VP a_n3048_n658# B nfet_03v3 ad=2.2064p pd=8.44u as=2.2064p ps=8.44u w=7.88u l=0.53u
+X37 a_n2822_1714# VP a_n3048_n658# B nfet_03v3 ad=2.2064p pd=8.44u as=2.2064p ps=8.44u w=7.88u l=0.53u
+X38 a_n3048_n658# VN OUT B nfet_03v3 ad=2.2064p pd=8.44u as=2.2064p ps=8.44u w=7.88u l=0.53u
+X39 B B B B nfet_03v3 ad=4.5704p pd=16.92u as=0 ps=0 w=7.88u l=0.53u
+X40 B B B B nfet_03v3 ad=4.5704p pd=16.92u as=0 ps=0 w=7.88u l=0.53u
+X41 a_n2822_1714# a_n2822_1714# VDD VDD pfet_03v3 ad=1.794p pd=7.18u as=1.794p ps=7.18u w=2.99u l=0.34u
+X42 a_n2822_1714# VP a_n3048_n658# B nfet_03v3 ad=2.2064p pd=8.44u as=2.2064p ps=8.44u w=7.88u l=0.53u
+X43 a_n2822_1714# VP a_n3048_n658# B nfet_03v3 ad=2.2064p pd=8.44u as=4.728p ps=16.96u w=7.88u l=0.53u
+X44 a_n3048_n658# VP a_n2822_1714# B nfet_03v3 ad=2.2064p pd=8.44u as=2.2064p ps=8.44u w=7.88u l=0.53u
+X45 a_n3048_n658# VN OUT B nfet_03v3 ad=2.2064p pd=8.44u as=2.2064p ps=8.44u w=7.88u l=0.53u
+X46 a_n2822_1714# VP a_n3048_n658# B nfet_03v3 ad=2.2064p pd=8.44u as=2.2064p ps=8.44u w=7.88u l=0.53u
+X47 VDD VDD VDD VDD pfet_03v3 ad=1.7342p pd=7.14u as=10.5248p ps=42.92u w=2.99u l=0.34u
+X48 a_n3048_n658# VP a_n2822_1714# B nfet_03v3 ad=2.2064p pd=8.44u as=2.2064p ps=8.44u w=7.88u l=0.53u
+X49 a_n3048_n658# VN OUT B nfet_03v3 ad=2.2064p pd=8.44u as=2.2064p ps=8.44u w=7.88u l=0.53u
+X50 B B B B nfet_03v3 ad=2.4534p pd=9.62u as=0 ps=0 w=4.23u l=0.68u
+X51 VDD VDD VDD VDD pfet_03v3 ad=1.7342p pd=7.14u as=0 ps=0 w=2.99u l=0.34u
+X52 a_n3048_n658# VN OUT B nfet_03v3 ad=2.2064p pd=8.44u as=2.2064p ps=8.44u w=7.88u l=0.53u
+X53 OUT VN a_n3048_n658# B nfet_03v3 ad=2.2064p pd=8.44u as=2.2064p ps=8.44u w=7.88u l=0.53u
+X54 a_n3048_n658# IBIAS VSS B nfet_03v3 ad=2.538p pd=9.66u as=2.538p ps=9.66u w=4.23u l=0.68u
+X55 IBIAS IBIAS VSS B nfet_03v3 ad=2.538p pd=9.66u as=2.538p ps=9.66u w=4.23u l=0.68u
+X56 a_n3048_n658# VN OUT B nfet_03v3 ad=2.2064p pd=8.44u as=2.2064p ps=8.44u w=7.88u l=0.53u
+X57 OUT VN a_n3048_n658# B nfet_03v3 ad=2.2064p pd=8.44u as=2.2064p ps=8.44u w=7.88u l=0.53u
+X58 OUT VN a_n3048_n658# B nfet_03v3 ad=4.728p pd=16.96u as=2.2064p ps=8.44u w=7.88u l=0.53u
+X59 a_n3048_n658# VP a_n2822_1714# B nfet_03v3 ad=2.2064p pd=8.44u as=2.2064p ps=8.44u w=7.88u l=0.53u
+X60 a_n3048_n658# VN OUT B nfet_03v3 ad=2.2064p pd=8.44u as=2.2064p ps=8.44u w=7.88u l=0.53u
+X61 B B B B nfet_03v3 ad=4.5704p pd=16.92u as=0 ps=0 w=7.88u l=0.53u
+X62 a_n2822_1714# VP a_n3048_n658# B nfet_03v3 ad=2.2064p pd=8.44u as=2.2064p ps=8.44u w=7.88u l=0.53u
+X63 OUT VN a_n3048_n658# B nfet_03v3 ad=2.2064p pd=8.44u as=2.2064p ps=8.44u w=7.88u l=0.53u
+X64 a_n3048_n658# VP a_n2822_1714# B nfet_03v3 ad=2.2064p pd=8.44u as=2.2064p ps=8.44u w=7.88u l=0.53u
+X65 B B B B nfet_03v3 ad=2.4534p pd=9.62u as=0 ps=0 w=4.23u l=0.68u
+C0 VDD VP 0.01468f
+C1 VP OUT 0.43304f
+C2 VDD a_n3048_n658# 0
+C3 VN VSS 0
+C4 VP a_n2822_1714# 5.57819f
+C5 a_n3048_n658# OUT 18.4998f
+C6 a_n3048_n658# a_n2822_1714# 18.5349f
+C7 IBIAS VSS 2.77639f
+C8 VN IBIAS 0
+C9 VDD OUT 1.81705f
+C10 VDD a_n2822_1714# 3.33193f
+C11 OUT a_n2822_1714# 1.66397f
+C12 VP VSS 0
+C13 VSS a_n3048_n658# 1.5997f
+C14 VP VN 3.71436f
+C15 VN a_n3048_n658# 5.16824f
+C16 VP IBIAS 0
+C17 IBIAS a_n3048_n658# 0.36571f
+C18 VSS OUT 0
+C19 VSS a_n2822_1714# 0
+C20 VDD VN 0.20218f
+C21 VN OUT 5.35223f
+C22 VN a_n2822_1714# 0.20798f
+C23 VP a_n3048_n658# 5.17738f
+C24 IBIAS OUT 0
+C25 IBIAS a_n2822_1714# 0.00112f
+C26 VSS B 1.88012f
+C27 IBIAS B 4.17258f
+C28 VN B 11.1828f
+C29 VP B 11.0052f
+C30 OUT B 6.58833f
+C31 VDD B 17.6784f
+C32 a_n3048_n658# B 10.0281f ; **FLOATING
+C33 a_n2822_1714# B 6.74109f ; **FLOATING
+.ends

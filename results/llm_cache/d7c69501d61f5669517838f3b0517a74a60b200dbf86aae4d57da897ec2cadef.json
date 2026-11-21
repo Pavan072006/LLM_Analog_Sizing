@@ -1,0 +1,1 @@
+"{\"reasoning\":\"Increased Itail to 55\u00b5A and gm/Id to 12 for M1/M3/M5 while keeping L=1\u00b5m. This yields gm1\u2248330\u00b5S giving GBW\u224826MHz (>20MHz). Power 3.3V*110\u00b5A\u2248363\u00b5W within 400\u00b5W. Gain remains >40dB, PM stays high, swing acceptable.\",\"gmid1\":12,\"L1_um\":1,\"gmid3\":12,\"L3_um\":1,\"gmid5\":12,\"L5_um\":1,\"Itail_uA\":55}"

@@ -1,0 +1,1 @@
+"{\"reasoning\":\"Calculated Itail from power budget (\u2264500\u00b5W) giving \u224870\u00b5A. Chosen gm\u2248140\u00b5S to meet 10MHz GBW with 2pF load. Selected moderate device dimensions to balance gain, speed, and swing.\",\"W1_um\":10,\"L1_um\":1,\"W3_um\":20,\"L3_um\":1,\"W5_um\":5,\"L5_um\":0.5,\"Itail_uA\":70}"

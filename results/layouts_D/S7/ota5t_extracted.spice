@@ -1,0 +1,27 @@
+* NGSPICE file created from ota5t.ext - technology: gf180mcuD
+
+.subckt ota5t B VSS IBIAS VN VP VDD OUT
+X0 IBIAS IBIAS VSS B nfet_03v3 ad=4.668p pd=16.76u as=4.668p ps=16.76u w=7.78u l=1.51u
+X1 IBIAS IBIAS VSS B nfet_03v3 ad=4.668p pd=16.76u as=4.668p ps=16.76u w=7.78u l=1.51u
+X2 VDD VDD VDD VDD pfet_03v3 ad=0.29p pd=2.16u as=1.76p ps=13.04u w=0.5u l=0.45u
+X3 a_n1142_298# VP a_n670_2066# B nfet_03v3 ad=2.916p pd=10.92u as=1.3608p ps=5.42u w=4.86u l=1.76u
+X4 B B B B nfet_03v3 ad=4.5124p pd=16.72u as=40.6p ps=0.15392m w=7.78u l=1.51u
+X5 a_n1142_298# VN OUT B nfet_03v3 ad=2.916p pd=10.92u as=1.3608p ps=5.42u w=4.86u l=1.76u
+X6 B B B B nfet_03v3 ad=2.8188p pd=10.88u as=0 ps=0 w=4.86u l=1.76u
+X7 B B B B nfet_03v3 ad=2.8188p pd=10.88u as=0 ps=0 w=4.86u l=1.76u
+X8 a_n670_2066# VP a_n1142_298# B nfet_03v3 ad=1.3608p pd=5.42u as=2.916p ps=10.92u w=4.86u l=1.76u
+X9 B B B B nfet_03v3 ad=2.8188p pd=10.88u as=0 ps=0 w=4.86u l=1.76u
+X10 a_n1142_298# IBIAS VSS B nfet_03v3 ad=4.668p pd=16.76u as=4.668p ps=16.76u w=7.78u l=1.51u
+X11 B B B B nfet_03v3 ad=4.5124p pd=16.72u as=0 ps=0 w=7.78u l=1.51u
+X12 OUT a_n670_2066# VDD VDD pfet_03v3 ad=0.3p pd=2.2u as=0.3p ps=2.2u w=0.5u l=0.45u
+X13 a_n1142_298# IBIAS VSS B nfet_03v3 ad=4.668p pd=16.76u as=4.668p ps=16.76u w=7.78u l=1.51u
+X14 a_n1142_298# VP a_n670_2066# B nfet_03v3 ad=2.916p pd=10.92u as=1.3608p ps=5.42u w=4.86u l=1.76u
+X15 a_n670_2066# VP a_n1142_298# B nfet_03v3 ad=1.3608p pd=5.42u as=2.916p ps=10.92u w=4.86u l=1.76u
+X16 OUT VN a_n1142_298# B nfet_03v3 ad=1.3608p pd=5.42u as=2.916p ps=10.92u w=4.86u l=1.76u
+X17 a_n1142_298# VN OUT B nfet_03v3 ad=2.916p pd=10.92u as=1.3608p ps=5.42u w=4.86u l=1.76u
+X18 a_n670_2066# a_n670_2066# VDD VDD pfet_03v3 ad=0.3p pd=2.2u as=0.3p ps=2.2u w=0.5u l=0.45u
+X19 OUT VN a_n1142_298# B nfet_03v3 ad=1.3608p pd=5.42u as=2.916p ps=10.92u w=4.86u l=1.76u
+X20 VDD VDD VDD VDD pfet_03v3 ad=0.29p pd=2.16u as=0 ps=0 w=0.5u l=0.45u
+X21 B B B B nfet_03v3 ad=2.8188p pd=10.88u as=0 ps=0 w=4.86u l=1.76u
+.ends
+

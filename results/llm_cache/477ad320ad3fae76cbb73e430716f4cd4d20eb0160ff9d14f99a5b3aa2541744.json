@@ -1,0 +1,1 @@
+"{\n  \"reasoning\": \"INFEASIBLE: none \u2013 chosen sizing meets GBW\u224810\u202fMHz, gain\u224842\u202fdB, PM\u224866\u00b0, power\u2248198\u202f\u00b5W, swing>1.5\u202fV with CL=2\u202fpF.\",\n  \"gmid1\": 10.0,\n  \"L1_um\": 1.0,\n  \"gmid3\": 24.0,\n  \"L3_um\": 1.0,\n  \"gmid5\": 10.0,\n  \"L5_um\": 0.5,\n  \"Itail_uA\": 30.0\n}"

@@ -1,0 +1,1 @@
+"{\"reasoning\":\"Increased Itail to raise gm1 and meet GBW. gm1=Itail/2*gm/Id=59.5\u00b5A*10=595\u00b5S \u2192 GBW\u224830.0MHz. Power=3.3V*2*119\u00b5A=785\u00b5W <800\u00b5W. All other specs remain satisfied.\",\"gmid1\":10,\"L1_um\":0.5,\"gmid3\":10,\"L3_um\":0.5,\"gmid5\":10,\"L5_um\":0.5,\"Itail_uA\":119}"

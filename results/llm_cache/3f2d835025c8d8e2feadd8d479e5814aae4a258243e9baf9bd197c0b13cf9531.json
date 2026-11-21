@@ -1,0 +1,1 @@
+"{\"reasoning\":\"Increased gm1 by raising its inversion level (gm/Id) to meet GBW while keeping tail current at the power limit. Mirror pole unchanged to preserve phase margin. All other specs remain satisfied.\",\"gmid1\":6.0,\"L1_um\":0.5,\"gmid3\":4.0,\"L3_um\":2.0,\"gmid5\":4.2,\"L5_um\":0.28,\"Itail_uA\":150}"

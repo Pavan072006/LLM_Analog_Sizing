@@ -1,0 +1,98 @@
+* NGSPICE file created from ota5t.ext - technology: gf180mcuD
+
+.subckt ota5t B VSS IBIAS VN VP VDD OUT
+X0 a_n1596_2070# a_n1596_2070# VDD VDD pfet_03v3 ad=2.646p pd=10.02u as=2.646p ps=10.02u w=4.41u l=0.66u
+X1 a_n7418_n3791# VN OUT B nfet_03v3 ad=1.8984p pd=7.34u as=1.8984p ps=7.34u w=6.78u l=0.83u
+X2 a_n1596_2070# VP a_n7418_n3791# B nfet_03v3 ad=1.8984p pd=7.34u as=1.8984p ps=7.34u w=6.78u l=0.83u
+X3 a_n7418_n3791# VP a_n1596_2070# B nfet_03v3 ad=4.068p pd=14.76u as=1.8984p ps=7.34u w=6.78u l=0.83u
+X4 B B B B nfet_03v3 ad=4.5182p pd=16.74u as=49.532p ps=0.18472m w=7.79u l=1.07u
+X5 VDD VDD VDD VDD pfet_03v3 ad=2.5578p pd=9.98u as=15.5232p ps=59.96u w=4.41u l=0.66u
+X6 IBIAS IBIAS VSS B nfet_03v3 ad=4.674p pd=16.78u as=4.674p ps=16.78u w=7.79u l=1.07u
+X7 IBIAS IBIAS VSS B nfet_03v3 ad=4.674p pd=16.78u as=4.674p ps=16.78u w=7.79u l=1.07u
+X8 a_n1596_2070# VP a_n7418_n3791# B nfet_03v3 ad=1.8984p pd=7.34u as=4.068p ps=14.76u w=6.78u l=0.83u
+X9 a_n1596_2070# VP a_n7418_n3791# B nfet_03v3 ad=1.8984p pd=7.34u as=1.8984p ps=7.34u w=6.78u l=0.83u
+X10 a_n1596_2070# VP a_n7418_n3791# B nfet_03v3 ad=1.8984p pd=7.34u as=4.068p ps=14.76u w=6.78u l=0.83u
+X11 a_n7418_n3791# VP a_n1596_2070# B nfet_03v3 ad=1.8984p pd=7.34u as=1.8984p ps=7.34u w=6.78u l=0.83u
+X12 IBIAS IBIAS VSS B nfet_03v3 ad=4.674p pd=16.78u as=4.674p ps=16.78u w=7.79u l=1.07u
+X13 IBIAS IBIAS VSS B nfet_03v3 ad=4.674p pd=16.78u as=4.674p ps=16.78u w=7.79u l=1.07u
+X14 IBIAS IBIAS VSS B nfet_03v3 ad=4.674p pd=16.78u as=4.674p ps=16.78u w=7.79u l=1.07u
+X15 a_n7418_n3791# VP a_n1596_2070# B nfet_03v3 ad=4.068p pd=14.76u as=1.8984p ps=7.34u w=6.78u l=0.83u
+X16 OUT VN a_n7418_n3791# B nfet_03v3 ad=1.8984p pd=7.34u as=4.068p ps=14.76u w=6.78u l=0.83u
+X17 a_n7418_n3791# VN OUT B nfet_03v3 ad=4.068p pd=14.76u as=1.8984p ps=7.34u w=6.78u l=0.83u
+X18 a_n7418_n3791# IBIAS VSS B nfet_03v3 ad=4.674p pd=16.78u as=4.674p ps=16.78u w=7.79u l=1.07u
+X19 a_n1596_2070# VP a_n7418_n3791# B nfet_03v3 ad=1.8984p pd=7.34u as=1.8984p ps=7.34u w=6.78u l=0.83u
+X20 OUT VN a_n7418_n3791# B nfet_03v3 ad=1.8984p pd=7.34u as=4.068p ps=14.76u w=6.78u l=0.83u
+X21 OUT VN a_n7418_n3791# B nfet_03v3 ad=1.8984p pd=7.34u as=1.8984p ps=7.34u w=6.78u l=0.83u
+X22 a_n7418_n3791# IBIAS VSS B nfet_03v3 ad=4.674p pd=16.78u as=4.674p ps=16.78u w=7.79u l=1.07u
+X23 a_n1596_2070# VP a_n7418_n3791# B nfet_03v3 ad=1.8984p pd=7.34u as=1.8984p ps=7.34u w=6.78u l=0.83u
+X24 a_n7418_n3791# IBIAS VSS B nfet_03v3 ad=4.674p pd=16.78u as=4.674p ps=16.78u w=7.79u l=1.07u
+X25 B B B B nfet_03v3 ad=3.9324p pd=14.72u as=0 ps=0 w=6.78u l=0.83u
+X26 a_n7418_n3791# IBIAS VSS B nfet_03v3 ad=4.674p pd=16.78u as=4.674p ps=16.78u w=7.79u l=1.07u
+X27 a_n7418_n3791# IBIAS VSS B nfet_03v3 ad=4.674p pd=16.78u as=4.674p ps=16.78u w=7.79u l=1.07u
+X28 IBIAS IBIAS VSS B nfet_03v3 ad=4.674p pd=16.78u as=4.674p ps=16.78u w=7.79u l=1.07u
+X29 a_n7418_n3791# VN OUT B nfet_03v3 ad=4.068p pd=14.76u as=1.8984p ps=7.34u w=6.78u l=0.83u
+X30 B B B B nfet_03v3 ad=3.9324p pd=14.72u as=0 ps=0 w=6.78u l=0.83u
+X31 IBIAS IBIAS VSS B nfet_03v3 ad=4.674p pd=16.78u as=4.674p ps=16.78u w=7.79u l=1.07u
+X32 a_n7418_n3791# IBIAS VSS B nfet_03v3 ad=4.674p pd=16.78u as=4.674p ps=16.78u w=7.79u l=1.07u
+X33 OUT VN a_n7418_n3791# B nfet_03v3 ad=1.8984p pd=7.34u as=1.8984p ps=7.34u w=6.78u l=0.83u
+X34 VDD VDD VDD VDD pfet_03v3 ad=2.5578p pd=9.98u as=0 ps=0 w=4.41u l=0.66u
+X35 IBIAS IBIAS VSS B nfet_03v3 ad=4.674p pd=16.78u as=4.674p ps=16.78u w=7.79u l=1.07u
+X36 B B B B nfet_03v3 ad=3.9324p pd=14.72u as=0 ps=0 w=6.78u l=0.83u
+X37 IBIAS IBIAS VSS B nfet_03v3 ad=4.674p pd=16.78u as=4.674p ps=16.78u w=7.79u l=1.07u
+X38 a_n7418_n3791# IBIAS VSS B nfet_03v3 ad=4.674p pd=16.78u as=4.674p ps=16.78u w=7.79u l=1.07u
+X39 OUT a_n1596_2070# VDD VDD pfet_03v3 ad=2.646p pd=10.02u as=2.646p ps=10.02u w=4.41u l=0.66u
+X40 a_n7418_n3791# VP a_n1596_2070# B nfet_03v3 ad=1.8984p pd=7.34u as=1.8984p ps=7.34u w=6.78u l=0.83u
+X41 a_n7418_n3791# VN OUT B nfet_03v3 ad=1.8984p pd=7.34u as=1.8984p ps=7.34u w=6.78u l=0.83u
+X42 IBIAS IBIAS VSS B nfet_03v3 ad=4.674p pd=16.78u as=4.674p ps=16.78u w=7.79u l=1.07u
+X43 a_n7418_n3791# VP a_n1596_2070# B nfet_03v3 ad=1.8984p pd=7.34u as=1.8984p ps=7.34u w=6.78u l=0.83u
+X44 a_n7418_n3791# IBIAS VSS B nfet_03v3 ad=4.674p pd=16.78u as=4.674p ps=16.78u w=7.79u l=1.07u
+X45 IBIAS IBIAS VSS B nfet_03v3 ad=4.674p pd=16.78u as=4.674p ps=16.78u w=7.79u l=1.07u
+X46 a_n7418_n3791# VP a_n1596_2070# B nfet_03v3 ad=1.8984p pd=7.34u as=1.8984p ps=7.34u w=6.78u l=0.83u
+X47 a_n7418_n3791# VN OUT B nfet_03v3 ad=1.8984p pd=7.34u as=1.8984p ps=7.34u w=6.78u l=0.83u
+X48 IBIAS IBIAS VSS B nfet_03v3 ad=4.674p pd=16.78u as=4.674p ps=16.78u w=7.79u l=1.07u
+X49 a_n7418_n3791# IBIAS VSS B nfet_03v3 ad=4.674p pd=16.78u as=4.674p ps=16.78u w=7.79u l=1.07u
+X50 a_n7418_n3791# IBIAS VSS B nfet_03v3 ad=4.674p pd=16.78u as=4.674p ps=16.78u w=7.79u l=1.07u
+X51 OUT VN a_n7418_n3791# B nfet_03v3 ad=1.8984p pd=7.34u as=1.8984p ps=7.34u w=6.78u l=0.83u
+X52 a_n7418_n3791# IBIAS VSS B nfet_03v3 ad=4.674p pd=16.78u as=4.674p ps=16.78u w=7.79u l=1.07u
+X53 B B B B nfet_03v3 ad=4.5182p pd=16.74u as=0 ps=0 w=7.79u l=1.07u
+X54 a_n7418_n3791# IBIAS VSS B nfet_03v3 ad=4.674p pd=16.78u as=4.674p ps=16.78u w=7.79u l=1.07u
+X55 B B B B nfet_03v3 ad=3.9324p pd=14.72u as=0 ps=0 w=6.78u l=0.83u
+X56 a_n7418_n3791# IBIAS VSS B nfet_03v3 ad=4.674p pd=16.78u as=4.674p ps=16.78u w=7.79u l=1.07u
+X57 IBIAS IBIAS VSS B nfet_03v3 ad=4.674p pd=16.78u as=4.674p ps=16.78u w=7.79u l=1.07u
+X58 a_n7418_n3791# VN OUT B nfet_03v3 ad=1.8984p pd=7.34u as=1.8984p ps=7.34u w=6.78u l=0.83u
+X59 OUT VN a_n7418_n3791# B nfet_03v3 ad=1.8984p pd=7.34u as=1.8984p ps=7.34u w=6.78u l=0.83u
+X60 a_n7418_n3791# IBIAS VSS B nfet_03v3 ad=4.674p pd=16.78u as=4.674p ps=16.78u w=7.79u l=1.07u
+X61 IBIAS IBIAS VSS B nfet_03v3 ad=4.674p pd=16.78u as=4.674p ps=16.78u w=7.79u l=1.07u
+C0 VDD VN 0.22455f
+C1 VN OUT 3.23774f
+C2 VN a_n1596_2070# 0.19133f
+C3 VP a_n7418_n3791# 3.09041f
+C4 IBIAS OUT 0
+C5 IBIAS a_n1596_2070# 0.0012f
+C6 VDD VP 0.01663f
+C7 VP OUT 0.3475f
+C8 VDD a_n7418_n3791# 0
+C9 VN VSS 0
+C10 VP a_n1596_2070# 3.39969f
+C11 a_n7418_n3791# OUT 6.3972f
+C12 a_n7418_n3791# a_n1596_2070# 6.41954f
+C13 IBIAS VSS 27.4887f
+C14 VN IBIAS 0
+C15 VDD OUT 1.91073f
+C16 VDD a_n1596_2070# 3.8782f
+C17 OUT a_n1596_2070# 1.32307f
+C18 VP VSS 0
+C19 VSS a_n7418_n3791# 15.7542f
+C20 VP VN 2.91416f
+C21 VN a_n7418_n3791# 3.08209f
+C22 VP IBIAS 0
+C23 IBIAS a_n7418_n3791# 4.49207f
+C24 VSS B 12.7877f
+C25 IBIAS B 32.6422f
+C26 VN B 7.37635f
+C27 VP B 7.34139f
+C28 OUT B 4.0325f
+C29 VDD B 21.5437f
+C30 a_n7418_n3791# B 17.1115f ; **FLOATING
+C31 a_n1596_2070# B 4.203f ; **FLOATING
+.ends

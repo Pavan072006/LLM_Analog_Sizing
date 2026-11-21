@@ -1,0 +1,90 @@
+[
+ {
+  "spec": "S1",
+  "drc": "clean",
+  "lvs": "match",
+  "area_um2": 6052.067999999999,
+  "cap_fF": 260.30740000000003,
+  "gbw_shift_pct": 0.9107278940017727,
+  "pm_shift_deg": -0.011333125132026112,
+  "post_pass_all_corners": true,
+  "post_fails": []
+ },
+ {
+  "spec": "S2",
+  "drc": "clean",
+  "lvs": "match",
+  "area_um2": 2172.9156,
+  "cap_fF": 119.91373000000002,
+  "gbw_shift_pct": 0.0856742520294107,
+  "pm_shift_deg": -0.15057943738081292,
+  "post_pass_all_corners": true,
+  "post_fails": []
+ },
+ {
+  "spec": "S3",
+  "drc": "clean",
+  "lvs": "match",
+  "area_um2": 5418.21155,
+  "cap_fF": 191.20735000000005,
+  "gbw_shift_pct": 0.6174623228983211,
+  "pm_shift_deg": -0.3400730119116986,
+  "post_pass_all_corners": true,
+  "post_fails": []
+ },
+ {
+  "spec": "S4",
+  "drc": "clean",
+  "lvs": "match",
+  "area_um2": 1954.3159999999998,
+  "cap_fF": 130.77837,
+  "gbw_shift_pct": 0.1670460754120251,
+  "pm_shift_deg": -0.07815072099631948,
+  "post_pass_all_corners": true,
+  "post_fails": []
+ },
+ {
+  "spec": "S5",
+  "drc": "clean",
+  "lvs": "match",
+  "area_um2": 2384.3182,
+  "cap_fF": 143.71547,
+  "gbw_shift_pct": 0.7895342241857062,
+  "pm_shift_deg": 0.1947021668321014,
+  "post_pass_all_corners": true,
+  "post_fails": []
+ },
+ {
+  "spec": "S6",
+  "drc": "clean",
+  "lvs": "match",
+  "area_um2": 5245.82625,
+  "cap_fF": 203.54966000000002,
+  "gbw_shift_pct": -0.29519226034780965,
+  "pm_shift_deg": -0.40059157346260577,
+  "post_pass_all_corners": true,
+  "post_fails": []
+ },
+ {
+  "spec": "S7",
+  "drc": "clean",
+  "lvs": "match",
+  "area_um2": 1326.168,
+  "cap_fF": 72.83614000000001,
+  "gbw_shift_pct": -0.1830452849563735,
+  "pm_shift_deg": -0.059150673999653236,
+  "post_pass_all_corners": true,
+  "post_fails": []
+ },
+ {
+  "spec": "S8",
+  "drc": "clean",
+  "lvs": "match",
+  "area_um2": 1596.7819,
+  "cap_fF": 125.99402,
+  "gbw_shift_pct": -0.046207441708134844,
+  "pm_shift_deg": -0.4234702055129418,
+  "post_pass_all_corners": true,
+  "post_fails": []
+ }
+]

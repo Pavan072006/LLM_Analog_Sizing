@@ -1,0 +1,1 @@
+"{\"reasoning\":\"Increase tail current to raise gm1, boosting both GBW and gain while staying under 100\u00b5W. Keep high gm/Id for efficiency. New Itail=15\u00b5A gives gm1\u2248360\u00b5S, GBW\u224811.4MHz and gain\u224845dB. Power\u224899\u00b5W still within budget.\",\"gmid1\":24,\"L1_um\":0.28,\"gmid3\":10,\"L3_um\":2,\"gmid5\":10,\"L5_um\":0.5,\"Itail_uA\":15}"

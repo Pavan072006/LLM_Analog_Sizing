@@ -1,0 +1,1 @@
+"{\n  \"reasoning\": \"INFEASIBLE: Phase margin limited by mirror pole (~30\u202fMHz) close to GBW, making 70\u00b0 hard to guarantee, but other specs are met.\",\n  \"gmid1\": 10,\n  \"L1_um\": 1.0,\n  \"gmid3\": 10,\n  \"L3_um\": 0.28,\n  \"gmid5\": 10,\n  \"L5_um\": 0.5,\n  \"Itail_uA\": 113\n}"

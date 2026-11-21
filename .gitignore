@@ -1,0 +1,16 @@
+# secrets
+.env
+# python / tool junk
+__pycache__/
+*.pyc
+lut/work/
+*.log
+# superseded or test-only results
+results/lut_gf180_novsb_backup.npz
+results/layout_prev/
+results/ablation_mock.*
+results/bad_replies.txt
+RUN_ME*.md
+sim/work/
+results/ablation_gemini.*
+results/layout/

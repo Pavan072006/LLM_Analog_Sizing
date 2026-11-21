@@ -1,0 +1,1 @@
+"{\"reasoning\":\"Met specs with Itail\u224830\u00b5A. Chosen L1=1\u00b5m for high gain, W1\u22482.7\u00b5m gives gm\u2248126\u00b5S. PMOS load sized for higher gm to push mirror pole above GBW. Tail NMOS sized for 30\u00b5A. All constraints satisfied.\",\"W1_um\":2.7,\"L1_um\":1.0,\"W3_um\":6.6,\"L3_um\":1.0,\"W5_um\":3.3,\"L5_um\":1.0,\"Itail_uA\":30.0}"

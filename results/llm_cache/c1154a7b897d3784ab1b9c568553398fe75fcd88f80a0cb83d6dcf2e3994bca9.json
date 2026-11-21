@@ -1,0 +1,1 @@
+"{\"reasoning\":\"Increase gm1 to meet GBW by raising gm/Id to 14 and tail current to 4.5\u00b5A (still within 30\u00b5W). This gives gm1\u224831.5\u00b5S \u2192 GBW\u22482.5MHz. Other devices keep same inversion and lengths.\",\"gmid1\":14,\"L1_um\":1,\"gmid3\":14,\"L3_um\":2,\"gmid5\":14,\"L5_um\":0.5,\"Itail_uA\":4.5}"

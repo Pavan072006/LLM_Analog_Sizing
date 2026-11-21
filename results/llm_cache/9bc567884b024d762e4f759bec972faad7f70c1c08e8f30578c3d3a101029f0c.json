@@ -1,0 +1,1 @@
+"{\n  \"reasoning\": \"Chosen overdrives Vov_n=0.2V, Vov_p=0.4V give gm1\u22480.55mS \u2192 GBW\u224844MHz, gain\u224849dB, mirror pole\u224822MHz \u2192 PM>60\u00b0, power\u22480.73mW, swing\u22482.5V >1.5V.\",\n  \"W1_um\": 6.9,\n  \"L1_um\": 0.5,\n  \"W3_um\": 6.9,\n  \"L3_um\": 0.8,\n  \"W5_um\": 13.8,\n  \"L5_um\": 0.5,\n  \"Itail_uA\": 110\n}"

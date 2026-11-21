@@ -1,0 +1,1 @@
+"{\"reasoning\":\"Increase gm1 to 0.21mS to meet GBW (16.7MHz). Use gm/Id=10, L1=1\u00b5m, L3=2\u00b5m, L5=1\u00b5m. Id per input=21\u00b5A, Itail=42\u00b5A. Widths from tables: W1\u22489.1\u00b5m, W3\u224887.5\u00b5m, W5\u224818.3\u00b5m. Gain remains ~49dB, power\u2248277\u00b5W.\",\"gmid1\":10,\"L1_um\":1,\"gmid3\":10,\"L3_um\":2,\"gmid5\":10,\"L5_um\":1,\"Itail_uA\":42}"

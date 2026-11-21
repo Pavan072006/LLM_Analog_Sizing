@@ -1,0 +1,1 @@
+"{\"reasoning\":\"INFEASIBLE: gain just meets 48dB with L=1um; to exceed, use L=2um for both NMOS and PMOS, keeping gm/Id\u22486 (moderate inversion). This yields gm\u22480.225mS per device, GBW\u224815MHz, power\u22480.5mW, swing acceptable.\",\"gmid1\":6,\"L1_um\":2,\"gmid3\":6,\"L3_um\":2,\"gmid5\":6,\"L5_um\":2,\"Itail_uA\":75}"

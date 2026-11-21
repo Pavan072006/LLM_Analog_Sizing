@@ -1,0 +1,1 @@
+"{\"reasoning\":\"Increase gm/Id for M1 to 15 to raise gm1 while keeping Itail\u224880\u00b5A. gm1=7.5*Itail\u22480.6mS gives GBW\u224895MHz>50MHz. Gain \u224843dB>35dB, power\u2248528\u00b5W<1mW, swing OK.\",\"gmid1\":15,\"L1_um\":0.5,\"gmid3\":10,\"L3_um\":2,\"gmid5\":10,\"L5_um\":0.5,\"Itail_uA\":80}"

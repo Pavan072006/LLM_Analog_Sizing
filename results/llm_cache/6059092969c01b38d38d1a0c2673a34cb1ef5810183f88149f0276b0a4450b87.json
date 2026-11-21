@@ -1,0 +1,1 @@
+"{\"reasoning\":\"INFEASIBLE: previous GBW short; increase Itail to 50\u00b5A gives gm1\u2248250\u00b5S \u2192 GBW\u224819.9MHz >15MHz while staying under 500\u00b5W power and preserving gain/PM/swing.\",\"gmid1\":10,\"L1_um\":1,\"gmid3\":10,\"L3_um\":2,\"gmid5\":10,\"L5_um\":1,\"Itail_uA\":50}"

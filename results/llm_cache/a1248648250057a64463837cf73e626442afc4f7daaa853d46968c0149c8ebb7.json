@@ -1,0 +1,1 @@
+"{\n  \"reasoning\": \"Design meets GBW (gm1=150\u00b5S gives 12MHz), gain (~47dB), PM (>60\u00b0 with mirror pole ~9MHz), power 198\u00b5W, swing ~1.85V, all within limits.\",\n  \"gmid1\": 10,\n  \"L1_um\": 1.0,\n  \"gmid3\": 8,\n  \"L3_um\": 1.0,\n  \"gmid5\": 8,\n  \"L5_um\": 0.5,\n  \"Itail_uA\": 30\n}"
