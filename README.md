@@ -101,8 +101,16 @@ tokens-per-minute pacing). All LLM replies are cached in `results/llm_cache/`, s
 - Specs cover gain, GBW, PM, power, swing, saturation; not yet slew, CMRR/PSRR, noise, offset.
 - Post-layout checks gain/GBW/PM/power; swing and saturation are taken from the schematic sim.
 
-## Future work
+## Linked projects
 
-Combine with the two sibling projects: predict post-layout shifts from the schematic with a GNN
-([PostLayout_GNN](https://github.com/Pavan072006/PostLayout_GNN)) to size with parasitics in the loop, and verify offset yield at 4–6σ with
-ML-guided importance sampling ([HighSigma_Yield](https://github.com/Pavan072006/HighSigma_Yield)).
+The 8 condition-D designs were passed to the two sibling projects:
+
+* **Post-layout prediction** ([PostLayout_GNN](https://github.com/Pavan072006/PostLayout_GNN)): for the 6 designs inside or near its training range,
+  the GNN predicts the post-layout GBW shift with an average error of 0.3 %-pts. It is off by 1–4 %-pts on S1 and S5, whose
+  input pairs (205–324 µm) are wider than any training layout.
+* **Offset yield** ([HighSigma_Yield](https://github.com/Pavan072006/HighSigma_Yield)): with a 10 mV offset spec, 5 designs reach > 5σ yield,
+  but S1 and S7 fail on 10–13 % of chips. Minimising power shrank the PMOS load until its mismatch
+  dominated. Offset was not in the specs, so the optimiser had no reason to avoid this.
+
+Together these show what the next version of the loop needs: an offset constraint checked with
+importance sampling, and GNN-predicted parasitics with a training range that covers the optimiser's search space.
