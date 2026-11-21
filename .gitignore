@@ -14,3 +14,4 @@ RUN_ME*.md
 sim/work/
 results/ablation_gemini.*
 results/layout/
+NOTES.md
