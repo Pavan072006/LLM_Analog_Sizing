@@ -104,5 +104,5 @@ tokens-per-minute pacing). All LLM replies are cached in `results/llm_cache/`, s
 ## Future work
 
 Combine with the two sibling projects: predict post-layout shifts from the schematic with a GNN
-(`../postlayout_gnn`) to size with parasitics in the loop, and verify offset yield at 4–6σ with
-ML-guided importance sampling (`../highsigma_mc`).
+([PostLayout_GNN](https://github.com/Pavan072006/PostLayout_GNN)) to size with parasitics in the loop, and verify offset yield at 4–6σ with
+ML-guided importance sampling ([HighSigma_Yield](https://github.com/Pavan072006/HighSigma_Yield)).
