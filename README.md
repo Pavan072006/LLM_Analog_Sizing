@@ -51,6 +51,28 @@ and reliability** (every spec solved, 100 % by 30 evaluations versus 58 %), not 
 otherwise unsolvable. In this run the C designs sat at 94–99 % of the power budget with thin corner
 margins, so the optimiser needed ~15 evaluations to add margin (the earlier run needed ~2).
 
+**Could the lookup table alone do it? (no LLM)** `agent/baseline_table.py` grid-searches the table
+(133 × 105 × 60 points per spec, 4 s) for the lowest-power design that meets every spec, using the table's
+predictions plus design margins (GBW +20 %, gain +2 dB, PM +5°). It then simulates once. With the loop on,
+after each simulation it rescales its GBW and PM predictions to match ngspice and searches again (up to 5 sims).
+
+| | Specs met (typical) | Met at all 5 corners | Simulations | Feasible specs wrongly called infeasible |
+|---|---|---|---|---|
+| B: LLM picks gm/Id, table computes W | 1/8 | 0/8 | 1 | 0 |
+| Table search, one shot | 1/8 | 1/8 | 1 | 1 (S4) |
+| Table search + recalibration loop | 5/8 | 5/8 | 1.7 | 3 (S3, S4, S5) |
+| C: LLM + simulator loop | 8/8 | 4/8 | 2.1 | 0 |
+
+* The table predicts **gain** within 0.7 dB, but **GBW** is up to 2.3× too optimistic (S3: 61 MHz predicted,
+  26 MHz simulated). To save power the search always chooses gm/Id ≈ 23–24 and L1 = 2 µm, which means huge input
+  transistors whose capacitance the simple formula GBW = gm1/(2π·CL) ignores. The search exploits exactly
+  the model's blind spot.
+* Recalibrating fixes that where it can. But one global correction factor is too pessimistic elsewhere in the
+  design space, so for S3 and S5 the search finds no design left and gives up. S4 is lost to the 20 % GBW margin
+  (it would need gm/Id > 24).
+* The margins pay off at corners (5/5 robust vs 4/8 for C), and power is lower (35–70 % vs ~90 %).
+  But the LLM loop solved every feasible spec and never mislabelled one.
+
 **After layout:** all 8 condition-D designs are DRC clean, LVS match, and still meet their
 spec at all 5 corners after parasitic extraction (GBW shift −0.3 % … +0.9 %, PM shift ≤ 0.4°).
 The optimiser's small margins absorb the parasitics. Area 1 300 – 6 100 µm².
@@ -71,6 +93,7 @@ Put API keys in `analog_agent/.env` (git-ignored): `GROQ_API_KEY=...` and/or `GE
 | 5. Optimiser, LLM start (D) | `python3 agent/refine.py` | ~2 min |
 | 6. Optimiser, random start | `python3 agent/refine.py --start random --seeds 3` | ~4 min |
 | 7. Random-search baseline | `python3 agent/baseline_random.py --budget 600` | ~2 min |
+| 7b. Table-search baseline (no LLM) | `python3 agent/baseline_table.py` | ~1 min |
 | 8. Budget-sweep plot | `python3 agent/budget_sweep.py` | seconds |
 | 9. Layout + post-layout of all D designs | `python3 layout/batch_layout.py` | ~9 min |
 | Single layout | `/foss/designs/glenv/bin/python -E layout/ota5t_layout.py --from results/refine_....json --spec S4 --mode D --out results/layout_S4` then `python3 layout/postlayout.py --out results/layout_S4` | ~1–2 min |
@@ -90,7 +113,7 @@ tokens-per-minute pacing). All LLM replies are cached in `results/llm_cache/`, s
 | `agent/llm.py` | OpenAI-compatible client: cache, pacing, retries, daily-quota stop |
 | `agent/run_ablation.py` | runs A/B/C over all specs, corners check, table + chart |
 | `agent/refine.py` | condition D optimiser (LLM or random start) |
-| `agent/baseline_random.py`, `agent/budget_sweep.py` | baselines and the budget plot |
+| `agent/baseline_random.py`, `agent/baseline_table.py`, `agent/budget_sweep.py` | non-LLM baselines (random search, table search) and the budget plot |
 | `layout/ota5t_layout.py`, `layout/postlayout.py`, `layout/batch_layout.py` | gLayout, DRC, LVS, PEX, post-layout |
 
 ## Limitations (honest)

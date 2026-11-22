@@ -32,6 +32,8 @@ class LUT:
                 }
                 if f"{key}_cgg" in t:
                     cols["ft"] = (gm[ok] / (2 * np.pi * np.maximum(t[f"{key}_cgg"][ok], 1e-21)))[sl]
+                if f"{key}_vdsat" in t:
+                    cols["vdsat"] = t[f"{key}_vdsat"][ok][sl]
                 order = np.argsort(cols["gmid"])
                 self.data[(kind, L, vsb)] = {k: v[order] for k, v in cols.items()}
 
